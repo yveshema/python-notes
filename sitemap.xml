@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       <url>
-        <loc>https://yveshema.github.io/python-notes/</loc>
+        <loc>https://python.rysapp.com/</loc>
       </url>
       <url>
-        <loc>https://yveshema.github.io/python-notes/getting-started/</loc>
+        <loc>https://python.rysapp.com/getting-started/</loc>
       </url>
       <url>
-        <loc>https://yveshema.github.io/python-notes/getting-started/input-output/</loc>
+        <loc>https://python.rysapp.com/getting-started/input-output/</loc>
       </url>
       <url>
-        <loc>https://yveshema.github.io/python-notes/getting-started/exercises/</loc>
+        <loc>https://python.rysapp.com/getting-started/exercises/</loc>
       </url>
 </urlset>
