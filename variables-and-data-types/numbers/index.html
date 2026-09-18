@@ -1006,6 +1006,13 @@ produce integer results.
 The first produces the <strong>completed</strong>, whole part of the division. The 
 other produces the <strong>remainder</strong>, or what's left over after the division.</p>
 </div>
+<div class="admonition warning">
+<p class="admonition-title">0.1 + 0.2 is not equal to 0.3</p>
+<p>Floating-point numbers cannot be represented exactly in Python.</p>
+<p><strong>Python always prints an approximation of the value stored by the machine. so,
+never compare two decimal values without rounding to the same decimal places first</strong>.</p>
+<p>To learn more about this, read the <a href="https://docs.python.org/3/tutorial/floatingpoint.html">Floating-point arithmetic</a> module in the Official Python tutorial.</p>
+</div>
 <h2 id="precedence-the-order-of-operations">Precedence — the order of operations</h2>
 <p>Python follows normal math order: <code>**</code> first, then <code>*</code> <code>/</code> <code>//</code> <code>%</code>, then <code>+</code> <code>-</code>. Use
 parentheses whenever you're unsure or want to be clear:</p>
