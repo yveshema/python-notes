@@ -1,0 +1,978 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Yves Rene Shema">
+      
+      
+        <link rel="canonical" href="https://python.rysapp.com/variables-and-data-types/built-ins/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/img/favicon.svg">
+      <meta name="generator" content="zensical-0.0.62">
+    
+    
+      
+        <title>Variables and data types - ACIT 1515 Scripting for IT</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.ce62732f.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#variables" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ACIT 1515 Scripting for IT" class="md-header__button md-logo" aria-label="ACIT 1515 Scripting for IT" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6M286.2 444.7a20.4 20.4 0 1 1 0-40.7 20.4 20.4 0 1 1 0 40.7M167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4m-6.6-183.4a20.4 20.4 0 1 1 0 40.8 20.4 20.4 0 1 1 0-40.8"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ACIT 1515 Scripting for IT
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Variables and data types
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+    </div>
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+      
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      
+  
+  
+  
+  
+    
+      
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../getting-started/" class="md-tabs__link">
+          
+  
+  Lessons
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ACIT 1515 Scripting for IT" class="md-nav__button md-logo" aria-label="ACIT 1515 Scripting for IT" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6M286.2 444.7a20.4 20.4 0 1 1 0-40.7 20.4 20.4 0 1 1 0 40.7M167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4m-6.6-183.4a20.4 20.4 0 1 1 0 40.8 20.4 20.4 0 1 1 0-40.8"/></svg>
+
+    </a>
+    ACIT 1515 Scripting for IT
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+  
+    <a href="../.." class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Home
+
+    
+  </span>
+  
+  
+
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+  
+  
+    
+  
+  
+  
+  
+    <a href="../../getting-started/" class="md-nav__link">
+      
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Lessons
+
+    
+  </span>
+  
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#variables" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Variables
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Variables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#naming-rules-style" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Naming rules &amp; style
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assignment-shortcuts" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Assignment shortcuts
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Strings
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Strings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#expressions-operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Expressions &amp; operators
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#precedence-the-order-operations-happen" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Precedence — the order operations happen
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#converting-between-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Converting between types
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Worked examples
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reading-check-quiz-sample-10-min" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Reading-check quiz (sample — ~10 min)
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#in-class-activities" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        In-class activities
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#homework" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Homework
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pitfalls-idioms" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pitfalls &amp; idioms
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#debugging" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Debugging
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Further reading
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  <h1 id="__skip">Variables and data types</h1>
+
+<p>Programs compute with <strong>values</strong>, remember them in <strong>variables</strong>, and combine them in
+<strong>expressions</strong>. </p>
+<p>In this lesson, we look at:</p>
+<ul>
+<li>rules of variables</li>
+<li>how to work with text and numbers</li>
+<li>some useful built-in functions </li>
+</ul>
+<h2 id="variables">Variables</h2>
+<p>A <strong>variable</strong> is a name bound to a value with <code>=</code> (assignment). Read <code>x = 5</code> as "let the
+name <code>x</code> refer to <code>5</code>," <strong>not</strong> "x equals 5".</p>
+<div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">price</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">quantity</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">total</span> <span class="o">=</span> <span class="n">price</span> <span class="o">*</span> <span class="n">quantity</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+<span class="go">60</span>
+</code></pre></div>
+<p>A variable can be rebound, that is, it can be made to point to a different value,
+potentially of a different type.</p>
+<div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">n</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<span class="go">11</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">n</span> <span class="o">=</span> <span class="s2">"now text"</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<span class="go">now text</span>
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Right side first</p>
+<p>In <code>n = n + 1</code>, Python evaluates <code>n + 1</code> first, using the <em>current</em> value of <code>n</code>
+then makes <code>n</code> refer to the result. That is, the right hand side of an assignment
+statement is always evaluated first.</p>
+</div>
+<div class="admonition failure">
+<p class="admonition-title">The value cannot be on the left-hand side of an assignment statement</p>
+<p>The following is illegal in Python:</p>
+<p><code>10 = n</code></p>
+<p>The left-hand side of an assignment statement must always be an identifier, a.k.a variable name.</p>
+</div>
+<h3 id="naming-rules-style">Naming rules &amp; style</h3>
+<ul>
+<li>use letters, digits, and underscores</li>
+<li>a variable name cannot start with a digit</li>
+<li>variable names are case-sensitive (<code>total</code> and <code>Total</code> are different names)</li>
+<li>style: lowercase <code>with_underscores</code></li>
+<li>style: descriptive. Prefer <code>tax_rate</code> over <code>tr</code></li>
+</ul>
+<h3 id="assignment-shortcuts">Assignment shortcuts</h3>
+<p>Multiple assignments on one line:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">0</span>
+</code></pre></div>
+<p>Update and rebind:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">count</span> <span class="o">+=</span> <span class="mi">5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">count</span> <span class="o">-=</span> <span class="mi">2</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
+<span class="go">3</span>
+</code></pre></div>
+<h2 id="strings">Strings</h2>
+<p>In Python the type used to represent text is called <strong>string</strong>.
+You can use strings to provide feedback to the user during program
+execution or output logs from the program.</p>
+<p>You can generate strings from other strings:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">firstname</span> <span class="o">=</span> <span class="s2">"Ada"</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lastname</span> <span class="o">=</span> <span class="s2">"Lovelace"</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fullname</span> <span class="o">=</span> <span class="n">firstname</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="n">lastname</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">fullname</span><span class="p">)</span>
+<span class="go">Ada Lovelace</span>
+</code></pre></div>
+<p>You can convert most types to strings:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">age</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s2">"You are "</span> <span class="o">+</span> <span class="n">age</span> <span class="o">+</span> <span class="s2">" years old"</span><span class="p">)</span>
+<span class="go">You are 25 years old</span>
+</code></pre></div>
+<p>Without the <code>str(25)</code> conversion, the <code>print()</code> statement would 
+have produced a <code>TypeError</code>.</p>
+<p>Other ways to concatenate (join) strings:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="s1">'Hello'</span> <span class="s1">' world'</span>
+<span class="go">'Hello world'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="s1">'Hello'</span>
+<span class="gp">... </span><span class="s1">' world'</span><span class="p">)</span>
+<span class="go">'Hello world'</span>
+</code></pre></div>
+<p>Use pairs of triple single or double quotes for multi-line strings:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">html</span> <span class="o">=</span> <span class="s2">"""</span>
+<span class="go">&lt;body&gt;</span>
+<span class="go">    &lt;h1&gt;About&lt;/h1&gt;</span>
+<span class="go">&lt;/body&gt;</span>
+<span class="go">"""</span>
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Suppressing newline character in multi-line strings</p>
+<p>When printed, the <code>html</code> variable will output a newline character
+at both ends of the string.</p>
+<p>This is often not what you want. Use a <code>\</code> to suppress a newline character
+anywhere in the string.</p>
+<div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">html</span> <span class="o">=</span> <span class="s2">"""</span><span class="se">\</span>
+<span class="gp">... </span><span class="s2">&lt;body&gt;</span>
+<span class="gp">... </span><span class="s2">    &lt;h1&gt;About&lt;/h1&gt;</span>
+<span class="gp">... </span><span class="s2">&lt;/body&gt;"""</span>
+</code></pre></div>
+</div>
+<p>The special <code>\</code> character is used to escape special characters such as quotes,
+non-printable characters and other characters that have meaning in the language (such
+as <code>$</code>, parentheses, braces, brackets, ...).</p>
+<div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="s2">"</span><span class="se">\"</span><span class="s2">Watch out!</span><span class="se">\"</span><span class="s2"> she cried"</span>
+<span class="go">'"Watch out!" she cried'</span>
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Raw strings</p>
+<p>There are times when you need to output the literal <code>\</code>. You can
+handle this in two ways:</p>
+<ul>
+<li>escape the <code>\</code>: <code>path="C:\\Program files\\Python314"</code></li>
+<li>use raw strings: <code>path=r"C:\Program files\Python314"</code></li>
+</ul>
+</div>
+<p>Uppercase and lowercase:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="s1">'python'</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+<span class="go">'PYTHON'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">'PYTHON'</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+<span class="go">'python'</span>
+</code></pre></div>
+<p>Get part of a string:</p>
+<div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">lang</span> <span class="o">=</span> <span class="s1">'python'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lang</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">upper</span> <span class="o">+</span> <span class="n">lang</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
+<span class="go">'Python'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lang</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">lang</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+<span class="go">'pythoN'</span>
+</code></pre></div>
+<div class="admonition info">
+<p class="admonition-title">Indexing and slicing</p>
+<p><code>lang[0]</code> in the previous example is called indexing. This means
+retrieving the character at the given position in the string.
+Strings are sequences and their indexes start from <code>0</code>.</p>
+<p>The expression <code>var[n:m]</code> is called slicing. This means retrieving
+a substring starting at position <code>n</code> (inclusive) up to position <code>m</code> (exclusive).</p>
+<p>Negative index values are permitted and they start at the end of the string.</p>
+</div>
+<h3 id="expressions-operators">Expressions &amp; operators</h3>
+<p>An <strong>expression</strong> is anything that produces a value. Arithmetic operators:</p>
+<div class="highlight"><pre><span></span><code><span class="mi">7</span> <span class="o">+</span> <span class="mi">2</span>       <span class="c1"># ⇒ 9    addition</span>
+<span class="mi">7</span> <span class="o">-</span> <span class="mi">2</span>       <span class="c1"># ⇒ 5    subtraction</span>
+<span class="mi">7</span> <span class="o">*</span> <span class="mi">2</span>       <span class="c1"># ⇒ 14   multiplication</span>
+<span class="mi">7</span> <span class="o">/</span> <span class="mi">2</span>       <span class="c1"># ⇒ 3.5  TRUE division — ALWAYS a float</span>
+<span class="mi">7</span> <span class="o">//</span> <span class="mi">2</span>      <span class="c1"># ⇒ 3    FLOOR division — drops the remainder</span>
+<span class="mi">7</span> <span class="o">%</span> <span class="mi">2</span>       <span class="c1"># ⇒ 1    modulo — the remainder</span>
+<span class="mi">7</span> <span class="o">**</span> <span class="mi">2</span>      <span class="c1"># ⇒ 49   exponent (7 squared)</span>
+</code></pre></div>
+<p>Two of these are the beginner surprises worth memorizing:</p>
+<ul>
+<li><code>/</code> always gives a <code>float</code>: <code>4 / 2</code> is <code>2.0</code>, not <code>2</code>.</li>
+<li><code>//</code> and <code>%</code> are the <em>integer</em> pair: <code>17 // 5</code> is <code>3</code>, <code>17 % 5</code> is <code>2</code> — "17 is three
+  fives with 2 left over." <code>%</code> is how you test even/odd (<code>n % 2 == 0</code>) and wrap around
+  (clock arithmetic).</li>
+</ul>
+<h3 id="precedence-the-order-operations-happen">Precedence — the order operations happen</h3>
+<p>Python follows normal math order: <code>**</code> first, then <code>*</code> <code>/</code> <code>//</code> <code>%</code>, then <code>+</code> <code>-</code>. Use
+parentheses whenever you're unsure or want to be clear:</p>
+<div class="highlight"><pre><span></span><code><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">4</span>         <span class="c1"># ⇒ 14   (multiplication first)</span>
+<span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span> <span class="o">*</span> <span class="mi">4</span>       <span class="c1"># ⇒ 20   (parentheses force the addition first)</span>
+<span class="mi">2</span> <span class="o">**</span> <span class="mi">3</span> <span class="o">**</span> <span class="mi">2</span>       <span class="c1"># ⇒ 512  (** groups right-to-left: 2 ** 9)</span>
+</code></pre></div>
+<blockquote>
+<p><strong>When in doubt, parenthesize.</strong> Nobody has ever been confused by <em>too many</em> parentheses;
+plenty of bugs come from too few.</p>
+</blockquote>
+<h3 id="converting-between-types">Converting between types</h3>
+<p>Text from the keyboard (lesson 04) always arrives as a <strong>string</strong>, even <code>"25"</code>. To do math
+you must convert. The three converters:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">int</span><span class="p">(</span><span class="s2">"25"</span><span class="p">)</span>       <span class="c1"># ⇒ 25     string → integer</span>
+<span class="nb">float</span><span class="p">(</span><span class="s2">"3.5"</span><span class="p">)</span>    <span class="c1"># ⇒ 3.5    string → float</span>
+<span class="nb">str</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>         <span class="c1"># ⇒ "25"   number → string</span>
+<span class="nb">int</span><span class="p">(</span><span class="mf">3.9</span><span class="p">)</span>        <span class="c1"># ⇒ 3      float → int (truncates toward zero — does NOT round)</span>
+<span class="nb">float</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>       <span class="c1"># ⇒ 25.0</span>
+</code></pre></div>
+<p>This is the real fix for last week's error:</p>
+<div class="highlight"><pre><span></span><code><span class="n">age</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"age: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">age</span><span class="p">))</span>    <span class="c1"># ⇒ age: 30   ✅ convert the number to text</span>
+</code></pre></div>
+<p>A conversion that doesn't make sense raises <code>ValueError</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">int</span><span class="p">(</span><span class="s2">"hello"</span><span class="p">)</span>    <span class="c1"># ValueError: invalid literal for int() with base 10: 'hello'</span>
+<span class="nb">int</span><span class="p">(</span><span class="s2">"3.5"</span><span class="p">)</span>      <span class="c1"># ValueError — int() won't parse a decimal string; use float("3.5")</span>
+</code></pre></div>
+<h2 id="worked-examples">Worked examples</h2>
+<div class="highlight"><pre><span></span><code><span class="c1"># tip.py — split a restaurant bill</span>
+<span class="n">bill</span> <span class="o">=</span> <span class="mf">84.50</span>
+<span class="n">tip_rate</span> <span class="o">=</span> <span class="mf">0.18</span>
+<span class="n">people</span> <span class="o">=</span> <span class="mi">3</span>
+
+<span class="n">tip</span> <span class="o">=</span> <span class="n">bill</span> <span class="o">*</span> <span class="n">tip_rate</span>           <span class="c1"># 15.21</span>
+<span class="n">total</span> <span class="o">=</span> <span class="n">bill</span> <span class="o">+</span> <span class="n">tip</span>              <span class="c1"># 99.71</span>
+<span class="n">per_person</span> <span class="o">=</span> <span class="n">total</span> <span class="o">/</span> <span class="n">people</span>     <span class="c1"># 33.236666...</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Tip:"</span><span class="p">,</span> <span class="n">tip</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Total:"</span><span class="p">,</span> <span class="n">total</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Each person pays:"</span><span class="p">,</span> <span class="n">per_person</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Rounded each:"</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">per_person</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>   <span class="c1"># ⇒ 33.24  (round to 2 decimals)</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="c1"># time_split.py — seconds into minutes and seconds, using // and %</span>
+<span class="n">seconds</span> <span class="o">=</span> <span class="mi">200</span>
+<span class="n">minutes</span> <span class="o">=</span> <span class="n">seconds</span> <span class="o">//</span> <span class="mi">60</span>         <span class="c1"># ⇒ 3</span>
+<span class="n">remaining</span> <span class="o">=</span> <span class="n">seconds</span> <span class="o">%</span> <span class="mi">60</span>        <span class="c1"># ⇒ 20</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">minutes</span><span class="p">,</span> <span class="s2">"min"</span><span class="p">,</span> <span class="n">remaining</span><span class="p">,</span> <span class="s2">"sec"</span><span class="p">)</span>     <span class="c1"># ⇒ 3 min 20 sec</span>
+</code></pre></div>
+<h2 id="reading-check-quiz-sample-10-min">Reading-check quiz (sample — ~10 min)</h2>
+<ol>
+<li>What type does each expression produce — <code>int</code>, <code>float</code>, or <code>bool</code>?
+   a) <code>6 / 3</code>  b) <code>6 // 3</code>  c) <code>2 ** 10</code>  d) <code>type(5) == int</code></li>
+<li>Evaluate exactly:
+   a) <code>17 % 5</code>  b) <code>17 // 5</code>  c) <code>2 + 3 * 4</code>  d) <code>int("8") + int("2")</code></li>
+<li>What is the value of <code>n</code> after these three lines?
+   <div class="highlight"><pre><span></span><code><span class="n">n</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">n</span> <span class="o">+=</span> <span class="mi">6</span>
+<span class="n">n</span> <span class="o">//=</span> <span class="mi">3</span>
+</code></pre></div></li>
+<li>Explain in one sentence why <code>"total: " + 5</code> fails but <code>"total: " + str(5)</code> works.</li>
+<li>Write two lines: store <code>1234</code> seconds in a variable, then print how many whole minutes
+   that is.</li>
+</ol>
+<details><summary>Answers</summary>
+
+1. a) `float` (`/` is always float) b) `int` c) `int` d) `bool`
+2. a) `2`  b) `3`  c) `14`  d) `10`
+3. `n` is `3`. (`4` → `10` → `10 // 3` = `3`.)
+4. `+` can't join a string and an int (`TypeError`); `str(5)` turns the number into text
+   `"5"` so both sides are strings.
+5. ```python
+   seconds = 1234
+   print(seconds // 60)      # ⇒ 20
+   ```
+
+</details>
+
+<h2 id="in-class-activities">In-class activities</h2>
+<p><strong>2.1</strong> — In the REPL, predict then check the type and value of: <code>10 / 2</code>, <code>10 // 3</code>,
+<code>10 % 3</code>, <code>2 ** 5</code>, <code>9 ** 0.5</code>.</p>
+<p><strong>2.2</strong> — A shop sells items at <code>4.75</code> each. Write <code>cost.py</code> that stores a quantity, computes
+the subtotal, adds 13% tax, and prints the subtotal, the tax, and the grand total, each
+rounded to 2 decimals.</p>
+<p><strong>2.3</strong> — Temperature: store a Celsius value, convert to Fahrenheit with <code>F = C * 9/5 + 32</code>,
+and print both. Try <code>C = 100</code> (expect <code>212.0</code>) and <code>C = 37</code> (expect <code>98.6</code>).</p>
+<p><strong>2.4</strong> — Given <code>total_minutes = 500</code>, print it as hours and minutes (<code>8 h 20 m</code>) using
+<code>//</code> and <code>%</code>.</p>
+<p><strong>2.5</strong> — Swap two variables: start with <code>a = "left"</code>, <code>b = "right"</code>, and end with them
+exchanged. (Two ways — find both.)</p>
+<details><summary>Hints</summary>
+
+- 2.2 — tax is `subtotal * 0.13`; grand total is `subtotal + tax`. `round(x, 2)`.
+- 2.3 — write `9/5` (true division) not `9//5` (which is `1`!). This is a classic bug.
+- 2.5 — either use a temporary variable, or Python's `a, b = b, a`.
+
+</details>
+
+<h2 id="homework">Homework</h2>
+<p><strong>H2.1</strong> — Write <code>change.py</code>: given an integer number of cents (e.g. <code>287</code>), print how many
+dollars and cents that is (<code>2 dollars and 87 cents</code>) using <code>//</code> and <code>%</code>.</p>
+<p><strong>H2.2</strong> — Write <code>powers.py</code> that prints the first few powers of 2 (<code>2**0</code> through <code>2**10</code>)
+— one <code>print</code> per line for now (loops come in week 6). Notice how fast they grow.</p>
+<p><strong>H2.3</strong> — Explain, in a comment in your file, why <code>0.1 + 0.2</code> prints <code>0.30000000000000004</code>.
+(Read the Pitfalls section.)</p>
+<h2 id="pitfalls-idioms">Pitfalls &amp; idioms</h2>
+<ul>
+<li><strong><code>/</code> vs <code>//</code></strong> — <code>/</code> is float division (<code>5/2 == 2.5</code>), <code>//</code> floors (<code>5//2 == 2</code>). Using
+  <code>//</code> where you meant <code>/</code> silently drops the fraction. The <code>9/5</code> in temperature conversion
+  is the classic trap.</li>
+<li><strong><code>float</code> is approximate</strong> — <code>0.1 + 0.2 == 0.30000000000000004</code>. Floats can't represent
+  every decimal exactly (they're binary fractions). For money, work in integer <em>cents</em>, or
+  <code>round(...)</code> only for display. Never test floats for exact equality.</li>
+<li><strong><code>int("3.5")</code> fails</strong> — <code>int()</code> won't parse a decimal <em>string</em>; use <code>float("3.5")</code>, or
+  <code>int(float("3.5"))</code>.</li>
+<li><strong><code>int(3.9)</code> is <code>3</code>, not <code>4</code></strong> — it truncates toward zero; use <code>round(3.9)</code> to round.</li>
+<li><strong>Reusing a name for two meanings</strong> — once <code>n = "text"</code>, <code>n</code> is no longer a number.
+  One name, one meaning.</li>
+<li><strong>Reading <code>=</code> as "equals"</strong> — it's <em>assignment</em> (bind the right side to the left name).
+  Equality is <code>==</code> (lesson 05).</li>
+</ul>
+<h2 id="debugging">Debugging</h2>
+<p>When arithmetic gives a surprising answer, print the <em>types</em>: <code>print(type(x), x)</code>. Most
+"wrong number" bugs are really "wrong type" bugs — a value you thought was an <code>int</code> is a
+<code>str</code> from input (lesson 04), or a <code>//</code> you meant to be <code>/</code>. Seeing the type makes it
+obvious.</p>
+<h2 id="further-reading">Further reading</h2>
+<ul>
+<li>Tutorial <a href="https://docs.python.org/3/tutorial/introduction.html#numbers">§3.1.1 Numbers</a>.</li>
+<li><a href="https://docs.python.org/3/library/functions.html#round"><code>round</code></a>,
+  <a href="https://docs.python.org/3/library/functions.html#int"><code>int</code></a>,
+  <a href="https://docs.python.org/3/library/functions.html#float"><code>float</code></a> references.</li>
+<li>Curious about <code>0.1 + 0.2</code>? Tutorial <a href="https://docs.python.org/3/tutorial/floatingpoint.html">§15 Floating-Point
+  Arithmetic</a> (optional, eye-opening).</li>
+</ul>
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 Yves R. Shema
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      
+      
+        
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["header.autohide","announce.dismiss","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.tracking","navigation.tabs","navigation.tabs.sticky","navigation.sections","navigation.path","navigation.indexes","navigation.top","navigation.expand","navigation.prune","navigation.footer","toc.follow","content.tabs.link"],"redirect":null,"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.8dcc8e9c.min.js"></script>
+      
+    
+  </body>
+</html>
