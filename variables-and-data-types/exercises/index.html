@@ -1008,11 +1008,14 @@ the swap.</p>
 <li>2.2 — tax is <code>subtotal * 0.13</code>; grand total is <code>subtotal + tax</code>. <code>round(x, 2)</code>.</li>
 <li>2.3 — write <code>9/5</code> (true division) not <code>9//5</code> (which is <code>1</code>!). This is a classic bug.</li>
 <li>2.5 — use multi-variable assignment syntax.</li>
+<li><strong>Remember to convert user input to the appropriate type if used in calculations.</strong></li>
 </ul>
 </details>
 <h2 id="homework">Homework</h2>
 <p><strong>H2.1</strong> — Write <code>change.py</code>: given an integer number of cents (e.g. <code>287</code>), print how many
 dollars and cents that is (<code>2 dollars and 87 cents</code>) using <code>//</code> and <code>%</code>.</p>
+<p>The program should prompt the user for a number of cents above 100, store it in a variable,
+then compute the conversion and print the results.</p>
 <p><strong>H2.2</strong> — Write <code>powers.py</code> that prints the first few  powers of 2 (<code>2**0</code> through <code>2**10</code>).
 Use one <code>print</code> statement per line.</p>
 
