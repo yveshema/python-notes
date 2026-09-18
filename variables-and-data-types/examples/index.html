@@ -10,7 +10,7 @@
         <meta name="author" content="Yves Rene Shema">
       
       
-        <link rel="canonical" href="https://python.rysapp.com/variables-and-data-types/conversion/">
+        <link rel="canonical" href="https://python.rysapp.com/variables-and-data-types/examples/">
       
       
       
@@ -23,7 +23,7 @@
     
     
       
-        <title>Numbers - ACIT 1515 Scripting for IT</title>
+        <title>Examples - ACIT 1515 Scripting for IT</title>
       
     
     
@@ -66,8 +66,7 @@
     <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#precedence-the-order-operations-happen" class="md-skip">
+        <a href="#__skip" class="md-skip">
           Skip to content
         </a>
       
@@ -103,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Numbers
+              Examples
             
           </span>
         </div>
@@ -395,11 +394,6 @@
                     
                     
                     
-                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-                      <div class="md-sidebar-button__wrapper">
-                        <label class="md-sidebar-button" for="__toc"></label>
-                      </div>
-                    
                   
                   <div class="md-sidebar__inner">
                     
@@ -411,47 +405,6 @@
   
   
   
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#precedence-the-order-operations-happen" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Precedence — the order operations happen
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#converting-between-types" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Converting between types
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#worked-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Worked examples
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -472,66 +425,8 @@
                 
                   
 
-  <h1 id="__skip">Numbers</h1>
+  <h1 id="__skip">Examples</h1>
 
-<p>Numbers are one of the most useful data types in all of programming. </p>
-<p>The two most commonly used number types are integers (<code>int</code>) and decimals (<code>float</code>).</p>
-<p>Doing arithmetic:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="mi">7</span> <span class="o">+</span> <span class="mi">2</span>
-<span class="go">9</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="mi">7</span> <span class="o">-</span> <span class="mi">2</span>
-<span class="go">5</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="mi">7</span> <span class="o">*</span> <span class="mi">2</span>
-<span class="go">14</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="mi">7</span> <span class="o">/</span> <span class="mi">2</span>
-<span class="go">3.5</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="mi">7</span> <span class="o">//</span> <span class="mi">2</span>
-<span class="go">3</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="mi">7</span> <span class="o">%</span> <span class="mi">2</span>
-<span class="go">1</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="mi">7</span> <span class="o">**</span> <span class="mi">2</span>
-<span class="go">49</span>
-</code></pre></div>
-<div class="admonition warning">
-<p class="admonition-title">Division always produces a <code>float</code></p>
-<p>This is the case even in exact division:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="mi">10</span> <span class="o">/</span> <span class="mi">2</span>
-<span class="go">5.0</span>
-</code></pre></div>
-<p><code>n // m</code> and <code>n % m</code> are complements of each other, and both
-produce integer results.
-The first produces the <strong>completed</strong>, whole part of the division. The 
-other produces the <strong>remainder</strong>, or what's left over after the division.</p>
-</div>
-<h3 id="precedence-the-order-operations-happen">Precedence — the order operations happen</h3>
-<p>Python follows normal math order: <code>**</code> first, then <code>*</code> <code>/</code> <code>//</code> <code>%</code>, then <code>+</code> <code>-</code>. Use
-parentheses whenever you're unsure or want to be clear:</p>
-<div class="highlight"><pre><span></span><code><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">4</span>         <span class="c1"># ⇒ 14   (multiplication first)</span>
-<span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span> <span class="o">*</span> <span class="mi">4</span>       <span class="c1"># ⇒ 20   (parentheses force the addition first)</span>
-<span class="mi">2</span> <span class="o">**</span> <span class="mi">3</span> <span class="o">**</span> <span class="mi">2</span>       <span class="c1"># ⇒ 512  (** groups right-to-left: 2 ** 9)</span>
-</code></pre></div>
-<blockquote>
-<p><strong>When in doubt, parenthesize.</strong> Nobody has ever been confused by <em>too many</em> parentheses;
-plenty of bugs come from too few.</p>
-</blockquote>
-<h3 id="converting-between-types">Converting between types</h3>
-<p>Text from the keyboard (lesson 04) always arrives as a <strong>string</strong>, even <code>"25"</code>. To do math
-you must convert. The three converters:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">int</span><span class="p">(</span><span class="s2">"25"</span><span class="p">)</span>       <span class="c1"># ⇒ 25     string → integer</span>
-<span class="nb">float</span><span class="p">(</span><span class="s2">"3.5"</span><span class="p">)</span>    <span class="c1"># ⇒ 3.5    string → float</span>
-<span class="nb">str</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>         <span class="c1"># ⇒ "25"   number → string</span>
-<span class="nb">int</span><span class="p">(</span><span class="mf">3.9</span><span class="p">)</span>        <span class="c1"># ⇒ 3      float → int (truncates toward zero — does NOT round)</span>
-<span class="nb">float</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>       <span class="c1"># ⇒ 25.0</span>
-</code></pre></div>
-<p>This is the real fix for last week's error:</p>
-<div class="highlight"><pre><span></span><code><span class="n">age</span> <span class="o">=</span> <span class="mi">30</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"age: "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">age</span><span class="p">))</span>    <span class="c1"># ⇒ age: 30   ✅ convert the number to text</span>
-</code></pre></div>
-<p>A conversion that doesn't make sense raises <code>ValueError</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">int</span><span class="p">(</span><span class="s2">"hello"</span><span class="p">)</span>    <span class="c1"># ValueError: invalid literal for int() with base 10: 'hello'</span>
-<span class="nb">int</span><span class="p">(</span><span class="s2">"3.5"</span><span class="p">)</span>      <span class="c1"># ValueError — int() won't parse a decimal string; use float("3.5")</span>
-</code></pre></div>
-<h2 id="worked-examples">Worked examples</h2>
 <div class="highlight"><pre><span></span><code><span class="c1"># tip.py — split a restaurant bill</span>
 <span class="n">bill</span> <span class="o">=</span> <span class="mf">84.50</span>
 <span class="n">tip_rate</span> <span class="o">=</span> <span class="mf">0.18</span>
