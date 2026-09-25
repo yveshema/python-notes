@@ -10,10 +10,10 @@
         <meta name="author" content="Yves Rene Shema">
       
       
-        <link rel="canonical" href="https://python.rysapp.com/getting-started/input-output/">
+        <link rel="canonical" href="https://python.rysapp.com/conditionals/more-on-strings/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../if-statements/">
       
       
         <link rel="next" href="../exercises/">
@@ -27,7 +27,7 @@
     
     
       
-        <title>Input and Output - ACIT 1515 Scripting for IT</title>
+        <title>String manipulation - ACIT 1515 Scripting for IT</title>
       
     
     
@@ -71,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#input-and-output" class="md-skip">
+        <a href="#testing-facts-about-a-string" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Input and Output
+              String manipulation
             
           </span>
         </div>
@@ -214,7 +214,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+        <a href="../../getting-started/" class="md-tabs__link">
           
   
   Lessons
@@ -394,8 +394,6 @@
                   
   
   
-    
-  
   
   
     
@@ -423,15 +421,17 @@
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../getting-started/" class="md-nav__link ">
               
   
   
@@ -455,7 +455,7 @@
           </div>
         
         
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
             <label class="md-nav__title" for="__nav_2_1">
               <span class="md-nav__icon md-icon"></span>
               
@@ -471,36 +471,10 @@
                   
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Input and Output
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="././" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../getting-started/input-output/" class="md-nav__link">
         
   
   
@@ -515,112 +489,6 @@
   
 
       </a>
-      
-        
-
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#print" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        <code>print()</code>
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#input" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        <code>input()</code>
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-python-runs-your-program" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        How Python runs your program
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#comments" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Comments
-      </span>
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Comments">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#strings-and-numbers-are-different-kinds-of-thing" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Strings and numbers are different kinds of thing
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reading-error-messages" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Reading error messages
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#worked-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Worked examples
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -633,7 +501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../exercises/" class="md-nav__link">
+      <a href="../../getting-started/exercises/" class="md-nav__link">
         
   
   
@@ -893,8 +761,10 @@
                   
   
   
+    
   
   
+  
     
     
       
@@ -924,17 +794,15 @@
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../conditionals/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -958,7 +826,7 @@
           </div>
         
         
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
             <label class="md-nav__title" for="__nav_2_3">
               <span class="md-nav__icon md-icon"></span>
               
@@ -977,7 +845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../conditionals/booleans/" class="md-nav__link">
+      <a href="../booleans/" class="md-nav__link">
         
   
   
@@ -1004,7 +872,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../conditionals/if-statements/" class="md-nav__link">
+      <a href="../if-statements/" class="md-nav__link">
         
   
   
@@ -1028,10 +896,34 @@
                   
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../conditionals/more-on-strings/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  String manipulation
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1046,6 +938,88 @@
   
 
       </a>
+      
+        
+
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#testing-facts-about-a-string" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Testing facts about a string
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#searching-and-replacing" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Searching and replacing
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#splitting-and-joining" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Splitting and joining
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#f-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        f-strings
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="f-strings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formatting-columns-of-text" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Formatting columns of text
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1058,7 +1032,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../conditionals/exercises/" class="md-nav__link">
+      <a href="../exercises/" class="md-nav__link">
         
   
   
@@ -1109,8 +1083,6 @@
                     
                     
                     
-                      
-                    
                     
                       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
                       <div class="md-sidebar-button__wrapper">
@@ -1128,8 +1100,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1138,10 +1108,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#print" class="md-nav__link">
+  <a href="#testing-facts-about-a-string" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        <code>print()</code>
+        Testing facts about a string
       </span>
     </span>
   </a>
@@ -1149,10 +1119,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#input" class="md-nav__link">
+  <a href="#searching-and-replacing" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        <code>input()</code>
+        Searching and replacing
       </span>
     </span>
   </a>
@@ -1160,10 +1130,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-python-runs-your-program" class="md-nav__link">
+  <a href="#splitting-and-joining" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        How Python runs your program
+        Splitting and joining
       </span>
     </span>
   </a>
@@ -1171,22 +1141,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#comments" class="md-nav__link">
+  <a href="#f-strings" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Comments
+        f-strings
       </span>
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Comments">
+    <nav class="md-nav" aria-label="f-strings">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#strings-and-numbers-are-different-kinds-of-thing" class="md-nav__link">
+  <a href="#formatting-columns-of-text" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Strings and numbers are different kinds of thing
+        Formatting columns of text
       </span>
     </span>
   </a>
@@ -1195,28 +1165,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reading-error-messages" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Reading error messages
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#worked-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Worked examples
-      </span>
-    </span>
-  </a>
   
 </li>
       
@@ -1275,7 +1223,7 @@
     
     
       <li class="md-path__item">
-        <a href="../" class="md-path__link">
+        <a href="../../getting-started/" class="md-path__link">
           
   
   <span class="md-ellipsis">
@@ -1305,6 +1253,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1314,7 +1266,7 @@
           
   
   <span class="md-ellipsis">
-    Getting Started
+    Conditionals
   </span>
 
         </a>
@@ -1331,145 +1283,111 @@
                 
                   
 
-<h1 id="input-and-output">Input and Output</h1>
-<p>A useful program typically processes some input and produces output.
-Many programs manipulate text as both input and output.</p>
-<h2 id="print"><code>print()</code></h2>
-<p>In Python, the built-in <code>print()</code> function can be used to print text
-to the screen.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s1">'Hello World'</span><span class="p">)</span>
-<span class="n">Hello</span> <span class="n">World</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-<span class="mi">5</span>
-</code></pre></div>
-<p>You can pass more than one value to the <code>print()</code> function; we call these
-arguments. When you do so, <code>print()</code> will output them with a space between them.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"x"</span><span class="p">,</span> <span class="s2">"y"</span><span class="p">,</span> <span class="s2">"z"</span><span class="p">)</span>
-<span class="n">x</span> <span class="n">y</span> <span class="n">z</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"total:"</span><span class="p">,</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span><span class="p">)</span>
-<span class="n">total</span><span class="p">:</span> <span class="mi">7</span>
-</code></pre></div>
-<p>Two useful keyword options:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"a"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">"-"</span><span class="p">)</span>        <span class="c1"># (sep = what goes between arguments)</span>
-<span class="n">a</span><span class="o">-</span><span class="n">b</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"no newline"</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>     <span class="c1"># won't print a newline</span>
-<span class="n">no</span> <span class="n">newline</span>
-</code></pre></div>
-<h2 id="input"><code>input()</code></h2>
-<p>The built-in <code>input()</code> function is used to collect text typed by the user
-into a terminal and makes it available for the program to use. The input
-ends when the user presses <code>ENTER</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Please enter your name: '</span><span class="p">)</span>
-<span class="n">Please</span> <span class="n">enter</span> <span class="n">your</span> <span class="n">name</span><span class="p">:</span> <span class="n">Ada</span>
-<span class="s1">'Ada'</span>
-</code></pre></div>
-<p>You will always want to store the input into a variable before you can use it.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Please enter your name: '</span><span class="p">)</span>
-<span class="n">Please</span> <span class="n">enter</span> <span class="n">your</span> <span class="n">name</span><span class="p">:</span> <span class="n">Ada</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-<span class="n">Ada</span>
-</code></pre></div>
-<h2 id="how-python-runs-your-program">How Python runs your program</h2>
-<p>A program is a list of <strong>statements</strong> the Python interpreter carries out <strong>in order</strong>, one
-after another:</p>
-<p><div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">"first"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"second"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"third"</span><span class="p">)</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>first
-second
-third
-</code></pre></div></p>
-<p>That top-to-bottom flow is the default and can only be changed by flow control statements
-and errors.</p>
-<h2 id="comments">Comments</h2>
-<p>Anything after <code>#</code> on a line is a <strong>comment</strong>. Python skips it entirely; it's there to
-explain <em>why</em>:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Convert the price to cents to avoid rounding problems.</span>
-<span class="n">price_cents</span> <span class="o">=</span> <span class="mi">1999</span>        <span class="c1"># $19.99 stored as an integer number of cents</span>
-</code></pre></div>
-<p>Good comments explain intent, not the obvious. </p>
+  <h1 id="__skip">String manipulation</h1>
+
+<h2 id="testing-facts-about-a-string">Testing facts about a string</h2>
+<p>The <code>str</code> type in Python provides a variety of methods that test a given string
+for the presence of certain properties and return <code>True</code> or <code>False</code>. These methods
+can be useful in conditional expressions.</p>
 <ul>
-<li><code>x = x + 1  # add one to x</code>: not a very useful comment</li>
-<li><code>x = x + 1  # advance to the next customer</code>: this carries actual information</li>
+<li>Check for the presence of a given <em>prefix</em> or set of prefixes or a given <em>suffix</em> or set of suffixes
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">text</span> <span class="o">=</span> <span class="s2">"the quick brown fox"</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">"a"</span><span class="p">)</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span><span class="o">.</span><span class="n">startswith</span><span class="p">((</span><span class="s2">"a"</span><span class="p">,</span> <span class="s2">"the"</span><span class="p">))</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">"dog"</span><span class="p">)</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">"x"</span><span class="p">)</span>
+<span class="go">True</span>
+</code></pre></div></li>
+<li>Predicates useful for input validation
+    <div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">text</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What is your age: "</span><span class="p">)</span>
+<span class="go">What is your age: 30</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span><span class="o">.</span><span class="n">isalpha</span><span class="p">()</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span><span class="o">.</span><span class="n">isalnum</span><span class="p">()</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span><span class="o">.</span><span class="n">isdigit</span><span class="p">()</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span><span class="o">.</span><span class="n">isnumeric</span><span class="p">()</span>
+<span class="go">True</span>
+</code></pre></div></li>
 </ul>
-<h3 id="strings-and-numbers-are-different-kinds-of-thing">Strings and numbers are different kinds of thing</h3>
-<p><code>"42"</code> (with quotes) is <strong>text</strong>; <code>42</code> (no quotes) is a <strong>number</strong>. They behave
-differently</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span>
-<span class="mi">5</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"2"</span> <span class="o">+</span> <span class="s2">"3"</span><span class="p">)</span>
-<span class="mi">23</span>
+<h2 id="searching-and-replacing">Searching and replacing</h2>
+<div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">text</span> <span class="o">=</span> <span class="s2">"the quick brown fox"</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s2">"quick"</span> <span class="ow">in</span> <span class="n">text</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">"quick"</span><span class="p">)</span>
+<span class="go">4</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">"lazy"</span><span class="p">)</span>
+<span class="go">-1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"quick"</span><span class="p">,</span> <span class="s2">"lazy"</span><span class="p">)</span>
+<span class="go">'the lazy brown fox'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s2">"quick"</span><span class="p">)</span>
+<span class="go">1</span>
 </code></pre></div>
-<p>Mixing them is an error, and a very common one:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"age: "</span> <span class="o">+</span> <span class="mi">30</span><span class="p">)</span>
-<span class="o">...</span>
-<span class="ne">TypeError</span><span class="p">:</span> <span class="n">can</span> <span class="n">only</span> <span class="n">concatenate</span> <span class="nb">str</span> <span class="p">(</span><span class="ow">not</span> <span class="s2">"int"</span><span class="p">)</span> <span class="n">to</span> <span class="nb">str</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"age: "</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
-<span class="n">age</span><span class="p">:</span> <span class="mi">30</span>
+<h2 id="splitting-and-joining">Splitting and joining</h2>
+<div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">text</span> <span class="o">=</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">      the quick brown fox"</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+
+<span class="go">    the quick brown fox</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+<span class="go">['the', 'quick', 'brown', 'fox']</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">"quick"</span><span class="p">)</span>
+<span class="go">['the', 'brown fox']</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">'_'</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">())</span>
+<span class="go">'the_quick_brown_fox'</span>
 </code></pre></div>
-<h2 id="reading-error-messages">Reading error messages</h2>
-<p>When Python can't run something, it stops and prints a <strong>traceback</strong>.
-A traceback tells you what happened and where.</p>
-<p>Always start reading from the <strong>bottom</strong>. That's where the most instructive
-information is.</p>
-<p><div class="highlight"><pre><span></span><code><span class="c1"># boom.py</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"start"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">10</span> <span class="o">/</span> <span class="mi">0</span><span class="p">)</span>       <span class="c1"># boom </span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"never runs"</span><span class="p">)</span>
+<h2 id="f-strings">f-strings</h2>
+<p>It is common to build strings from values stored in variables. <em>f-strings</em> provide a
+convenient way to achieve this. </p>
+<div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">item</span> <span class="o">=</span> <span class="s2">"oranges"</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">price</span> <span class="o">=</span> <span class="mf">1.5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">quantity</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"You bought </span><span class="si">{</span><span class="n">quantity</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="go">You bought 5 oranges</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Total: $</span><span class="si">{</span><span class="n">quantity</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">price</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="go">Total: $7.50</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>start
-Traceback (most recent call last):
-  File "boom.py", line 4, in &lt;module&gt;
-ZeroDivisionError: division by zero
-</code></pre></div></p>
-<ul>
-<li><code>ZeroDivisionError: division by zero</code> — <em>what</em> went wrong.</li>
-<li><code>File "boom.py", line 4</code> — <em>where</em>.</li>
-<li><code>start</code> printed, <code>never runs</code> did not — Python stopped at the error.</li>
-</ul>
-<p>Here are some of the most common errors:</p>
-<table>
-<thead>
-<tr>
-<th>Error</th>
-<th>Means</th>
-<th>Typical cause</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>SyntaxError</code></td>
-<td>Python can't even parse the line</td>
-<td>missing <code>)</code>, missing quote</td>
-</tr>
-<tr>
-<td><code>NameError</code></td>
-<td>a name isn't defined</td>
-<td>typo, or used before assigned</td>
-</tr>
-<tr>
-<td><code>TypeError</code></td>
-<td>wrong <em>kind</em> of value</td>
-<td><code>"age" + 30</code></td>
-</tr>
-</tbody>
-</table>
-<h2 id="worked-examples">Worked examples</h2>
-<p><div class="highlight"><pre><span></span><code><span class="c1"># greet.py — a first real script</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"What this program does: greets the world three ways."</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Hello, world!"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Hello,"</span><span class="p">,</span> <span class="s2">"world!"</span><span class="p">)</span>            <span class="c1"># print joins with a space</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Hel"</span> <span class="o">+</span> <span class="s2">"lo"</span> <span class="o">+</span> <span class="s2">", world!"</span><span class="p">)</span>     <span class="c1"># strings joined by hand</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"="</span> <span class="o">*</span> <span class="mi">20</span><span class="p">)</span>                      <span class="c1"># ⇒ ==================== (repeat a string)</span>
+<p>The <code>:.2f</code> in the previous example is a formatting specifier. It tells Python
+to format the value as a decimal number with two decimal places.</p>
+<p>In addition to specifying the <em>type</em> and <em>precision</em> of a number, the Python 
+formatting <a href="https://docs.python.org/3/library/string.html#formatspec" target="_blank">mini-language</a>
+lets you customize other things such as width, alignment, padding, etc.</p>
+<div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">amount</span> <span class="o">=</span> <span class="mi">50</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">amount</span><span class="si">:</span><span class="s2">&gt;5</span><span class="si">}</span><span class="s2">"</span>
+<span class="go">'   50'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">amount</span><span class="si">:</span><span class="s2">&lt;5</span><span class="si">}</span><span class="s2">:</span>
+<span class="go">'50   '</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">amount</span><span class="si">:</span><span class="s2">&gt;5.2f</span><span class="si">}</span><span class="s2">"</span>
+<span class="go">'50.00'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">amount</span><span class="si">:</span><span class="s2">*&gt;5</span><span class="si">}</span><span class="s2">"</span>
+<span class="go">'***50'</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">amount</span><span class="si">:</span><span class="s2">*^5</span><span class="si">}</span><span class="s2">"</span>
+<span class="go">'*50**'</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>What this program does: greets the world three ways.
-Hello, world!
-Hello, world!
-Hello, world!
-====================
-</code></pre></div></p>
+<h3 id="formatting-columns-of-text">Formatting columns of text</h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># invoice.py</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"your invoice"</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span><span class="o">.</span><span class="n">center</span><span class="p">(</span><span class="mi">34</span><span class="p">))</span>    <span class="c1"># str also can center!</span>
+<span class="nb">print</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="s1">'Item'</span><span class="si">:</span><span class="s2">&lt;10</span><span class="si">}{</span><span class="s1">'Quantity'</span><span class="si">:</span><span class="s2">&gt;9</span><span class="si">}{</span><span class="s1">'Price'</span><span class="si">:</span><span class="s2">&gt;6</span><span class="si">}{</span><span class="s1">'Subtotal'</span><span class="si">:</span><span class="s2">&gt;9</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"-"</span> <span class="o">*</span> <span class="mi">34</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="s1">'Printer'</span><span class="si">:</span><span class="s2">&lt;10</span><span class="si">}{</span><span class="mi">1</span><span class="si">:</span><span class="s2">&gt;9</span><span class="si">}{</span><span class="mf">45.99</span><span class="si">:</span><span class="s2">&gt;6.2f</span><span class="si">}{</span><span class="mf">45.99</span><span class="si">:</span><span class="s2">&gt;9.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="s1">'Cartridge'</span><span class="si">:</span><span class="s2">&lt;10</span><span class="si">}{</span><span class="mi">5</span><span class="si">:</span><span class="s2">&gt;9</span><span class="si">}{</span><span class="mf">10.99</span><span class="si">:</span><span class="s2">&gt;6.2f</span><span class="si">}{</span><span class="mi">5</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">10.99</span><span class="si">:</span><span class="s2">&gt;9.2f</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"-"</span> <span class="o">*</span> <span class="mi">34</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="sa">f</span><span class="s2">"$</span><span class="si">{</span><span class="mi">5</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="mf">10.99</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">45.99</span><span class="si">}</span><span class="s2">"</span><span class="si">:</span><span class="s2">&gt;34</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span> <span class="c1"># you can nest them!</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>           YOUR INVOICE
+
+Item       Quantity Price Subtotal
+----------------------------------
+Printer           1 45.99    45.99
+Cartridge         5 10.99    54.95
+----------------------------------
+                           $100.94
+</code></pre></div>
 
 
 
@@ -1478,6 +1396,9 @@ Hello, world!
 
 
 
+
+  
+  
 
 
 
@@ -1509,7 +1430,7 @@ Hello, world!
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Getting Python">
+          <a href="../if-statements/" class="md-footer__link md-footer__link--prev" aria-label="Previous: If Statements">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
@@ -1519,7 +1440,7 @@ Hello, world!
                 Previous
               </span>
               <div class="md-ellipsis">
-                Getting Python
+                If Statements
               </div>
             </div>
           </a>

@@ -10,13 +10,13 @@
         <meta name="author" content="Yves Rene Shema">
       
       
-        <link rel="canonical" href="https://python.rysapp.com/getting-started/input-output/">
+        <link rel="canonical" href="https://python.rysapp.com/conditionals/if-statements/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../booleans/">
       
       
-        <link rel="next" href="../exercises/">
+        <link rel="next" href="../more-on-strings/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Input and Output - ACIT 1515 Scripting for IT</title>
+        <title>If Statements - ACIT 1515 Scripting for IT</title>
       
     
     
@@ -71,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#input-and-output" class="md-skip">
+        <a href="#code-blocks" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Input and Output
+              If Statements
             
           </span>
         </div>
@@ -214,7 +214,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+        <a href="../../getting-started/" class="md-tabs__link">
           
   
   Lessons
@@ -394,8 +394,6 @@
                   
   
   
-    
-  
   
   
     
@@ -423,15 +421,17 @@
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../getting-started/" class="md-nav__link ">
               
   
   
@@ -455,7 +455,7 @@
           </div>
         
         
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
             <label class="md-nav__title" for="__nav_2_1">
               <span class="md-nav__icon md-icon"></span>
               
@@ -471,36 +471,10 @@
                   
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Input and Output
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="././" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../getting-started/input-output/" class="md-nav__link">
         
   
   
@@ -515,112 +489,6 @@
   
 
       </a>
-      
-        
-
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#print" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        <code>print()</code>
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#input" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        <code>input()</code>
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-python-runs-your-program" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        How Python runs your program
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#comments" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Comments
-      </span>
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Comments">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#strings-and-numbers-are-different-kinds-of-thing" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Strings and numbers are different kinds of thing
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reading-error-messages" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Reading error messages
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#worked-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Worked examples
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -633,7 +501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../exercises/" class="md-nav__link">
+      <a href="../../getting-started/exercises/" class="md-nav__link">
         
   
   
@@ -893,8 +761,10 @@
                   
   
   
+    
   
   
+  
     
     
       
@@ -924,17 +794,15 @@
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../conditionals/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -958,7 +826,7 @@
           </div>
         
         
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
             <label class="md-nav__title" for="__nav_2_3">
               <span class="md-nav__icon md-icon"></span>
               
@@ -977,7 +845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../conditionals/booleans/" class="md-nav__link">
+      <a href="../booleans/" class="md-nav__link">
         
   
   
@@ -1001,10 +869,34 @@
                   
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../conditionals/if-statements/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  If Statements
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1019,6 +911,71 @@
   
 
       </a>
+      
+        
+
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#code-blocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Code blocks
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-single-branching" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        <code>if</code> — single branching
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#if-elif-else-multiple-branching" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        <code>if - elif - else</code> - multiple branching
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Example
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1031,7 +988,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../conditionals/more-on-strings/" class="md-nav__link">
+      <a href="../more-on-strings/" class="md-nav__link">
         
   
   
@@ -1058,7 +1015,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../conditionals/exercises/" class="md-nav__link">
+      <a href="../exercises/" class="md-nav__link">
         
   
   
@@ -1109,8 +1066,6 @@
                     
                     
                     
-                      
-                    
                     
                       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
                       <div class="md-sidebar-button__wrapper">
@@ -1128,8 +1083,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1138,10 +1091,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#print" class="md-nav__link">
+  <a href="#code-blocks" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        <code>print()</code>
+        Code blocks
       </span>
     </span>
   </a>
@@ -1149,10 +1102,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#input" class="md-nav__link">
+  <a href="#if-single-branching" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        <code>input()</code>
+        <code>if</code> — single branching
       </span>
     </span>
   </a>
@@ -1160,10 +1113,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-python-runs-your-program" class="md-nav__link">
+  <a href="#if-elif-else-multiple-branching" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        How Python runs your program
+        <code>if - elif - else</code> - multiple branching
       </span>
     </span>
   </a>
@@ -1171,49 +1124,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#comments" class="md-nav__link">
+  <a href="#example" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        Comments
-      </span>
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Comments">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#strings-and-numbers-are-different-kinds-of-thing" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Strings and numbers are different kinds of thing
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reading-error-messages" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Reading error messages
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#worked-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Worked examples
+        Example
       </span>
     </span>
   </a>
@@ -1275,7 +1189,7 @@
     
     
       <li class="md-path__item">
-        <a href="../" class="md-path__link">
+        <a href="../../getting-started/" class="md-path__link">
           
   
   <span class="md-ellipsis">
@@ -1305,6 +1219,10 @@
       
         
       
+        
+      
+        
+      
     
     
     
@@ -1314,7 +1232,7 @@
           
   
   <span class="md-ellipsis">
-    Getting Started
+    Conditionals
   </span>
 
         </a>
@@ -1331,145 +1249,63 @@
                 
                   
 
-<h1 id="input-and-output">Input and Output</h1>
-<p>A useful program typically processes some input and produces output.
-Many programs manipulate text as both input and output.</p>
-<h2 id="print"><code>print()</code></h2>
-<p>In Python, the built-in <code>print()</code> function can be used to print text
-to the screen.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s1">'Hello World'</span><span class="p">)</span>
-<span class="n">Hello</span> <span class="n">World</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-<span class="mi">5</span>
-</code></pre></div>
-<p>You can pass more than one value to the <code>print()</code> function; we call these
-arguments. When you do so, <code>print()</code> will output them with a space between them.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"x"</span><span class="p">,</span> <span class="s2">"y"</span><span class="p">,</span> <span class="s2">"z"</span><span class="p">)</span>
-<span class="n">x</span> <span class="n">y</span> <span class="n">z</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"total:"</span><span class="p">,</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span><span class="p">)</span>
-<span class="n">total</span><span class="p">:</span> <span class="mi">7</span>
-</code></pre></div>
-<p>Two useful keyword options:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"a"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">"-"</span><span class="p">)</span>        <span class="c1"># (sep = what goes between arguments)</span>
-<span class="n">a</span><span class="o">-</span><span class="n">b</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"no newline"</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>     <span class="c1"># won't print a newline</span>
-<span class="n">no</span> <span class="n">newline</span>
-</code></pre></div>
-<h2 id="input"><code>input()</code></h2>
-<p>The built-in <code>input()</code> function is used to collect text typed by the user
-into a terminal and makes it available for the program to use. The input
-ends when the user presses <code>ENTER</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Please enter your name: '</span><span class="p">)</span>
-<span class="n">Please</span> <span class="n">enter</span> <span class="n">your</span> <span class="n">name</span><span class="p">:</span> <span class="n">Ada</span>
-<span class="s1">'Ada'</span>
-</code></pre></div>
-<p>You will always want to store the input into a variable before you can use it.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Please enter your name: '</span><span class="p">)</span>
-<span class="n">Please</span> <span class="n">enter</span> <span class="n">your</span> <span class="n">name</span><span class="p">:</span> <span class="n">Ada</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-<span class="n">Ada</span>
-</code></pre></div>
-<h2 id="how-python-runs-your-program">How Python runs your program</h2>
-<p>A program is a list of <strong>statements</strong> the Python interpreter carries out <strong>in order</strong>, one
-after another:</p>
-<p><div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">"first"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"second"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"third"</span><span class="p">)</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>first
-second
-third
-</code></pre></div></p>
-<p>That top-to-bottom flow is the default and can only be changed by flow control statements
-and errors.</p>
-<h2 id="comments">Comments</h2>
-<p>Anything after <code>#</code> on a line is a <strong>comment</strong>. Python skips it entirely; it's there to
-explain <em>why</em>:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Convert the price to cents to avoid rounding problems.</span>
-<span class="n">price_cents</span> <span class="o">=</span> <span class="mi">1999</span>        <span class="c1"># $19.99 stored as an integer number of cents</span>
-</code></pre></div>
-<p>Good comments explain intent, not the obvious. </p>
+  <h1 id="__skip">If Statements</h1>
+
+<p><code>if</code> statements let you branch out based on the outcome of a boolean test. </p>
+<h2 id="code-blocks">Code blocks</h2>
+<p>Code blocks are a group of one or more statements that are meant to be executed
+as a unit. They are used to define the body of conditional statements, loops, functions and classes.</p>
+<p>Python uses <strong>indentation</strong> to define code blocks and they have the following shape:</p>
 <ul>
-<li><code>x = x + 1  # add one to x</code>: not a very useful comment</li>
-<li><code>x = x + 1  # advance to the next customer</code>: this carries actual information</li>
+<li>the block definition statement must end with a colon (<code>:</code>)</li>
+<li>the block's body must be indented to the right by one space or more 
+(4 spaces is the recommended amount). The indentation must be consistent for the entire block.</li>
+<li>the block ends when the indentation returns to the previous level.</li>
 </ul>
-<h3 id="strings-and-numbers-are-different-kinds-of-thing">Strings and numbers are different kinds of thing</h3>
-<p><code>"42"</code> (with quotes) is <strong>text</strong>; <code>42</code> (no quotes) is a <strong>number</strong>. They behave
-differently</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span>
-<span class="mi">5</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"2"</span> <span class="o">+</span> <span class="s2">"3"</span><span class="p">)</span>
-<span class="mi">23</span>
+<h2 id="if-single-branching"><code>if</code> — single branching</h2>
+<p>Executes the block only if the test condition is <code>True</code>, and does nothing otherwise.</p>
+<div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">temp</span> <span class="o">=</span> <span class="mi">32</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">if</span> <span class="n">temp</span> <span class="o">&gt;</span> <span class="mi">30</span><span class="p">:</span>
+<span class="gp">... </span>   <span class="nb">print</span><span class="p">(</span><span class="s2">"It's hot"</span><span class="p">)</span>
+<span class="gp">... </span>   <span class="nb">print</span><span class="p">(</span><span class="s2">"Drink water"</span><span class="p">)</span>
+<span class="gp">...</span>
+<span class="go">It's hot</span>
+<span class="go">Drint water</span>
 </code></pre></div>
-<p>Mixing them is an error, and a very common one:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"age: "</span> <span class="o">+</span> <span class="mi">30</span><span class="p">)</span>
-<span class="o">...</span>
-<span class="ne">TypeError</span><span class="p">:</span> <span class="n">can</span> <span class="n">only</span> <span class="n">concatenate</span> <span class="nb">str</span> <span class="p">(</span><span class="ow">not</span> <span class="s2">"int"</span><span class="p">)</span> <span class="n">to</span> <span class="nb">str</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"age: "</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
-<span class="n">age</span><span class="p">:</span> <span class="mi">30</span>
+<h2 id="if-elif-else-multiple-branching"><code>if - elif - else</code> - multiple branching</h2>
+<p>Evaluate multiple test conditions and execute the block of the first "true" branch. 
+The <code>else</code> clause runs if no other branch evaluated to <code>True</code>.</p>
+<div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">score</span> <span class="o">=</span> <span class="mi">75</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">if</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">:</span>
+<span class="gp">... </span>   <span class="n">grade</span> <span class="o">=</span> <span class="s2">"A"</span>
+<span class="gp">... </span><span class="k">elif</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">80</span><span class="p">:</span>
+<span class="gp">... </span>   <span class="n">grade</span> <span class="o">=</span> <span class="s2">"B"</span>
+<span class="gp">... </span><span class="k">elif</span> <span class="n">score</span> <span class="o">&gt;=</span> <span class="mi">70</span><span class="p">:</span>
+<span class="gp">... </span>   <span class="n">grade</span> <span class="o">=</span> <span class="s2">"C"</span>
+<span class="gp">... </span><span class="k">else</span><span class="p">:</span>
+<span class="gp">... </span>   <span class="n">grade</span> <span class="o">=</span> <span class="s2">"F"</span>
+<span class="gp">...</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">grade</span><span class="p">)</span> 
+<span class="go">C</span>
 </code></pre></div>
-<h2 id="reading-error-messages">Reading error messages</h2>
-<p>When Python can't run something, it stops and prints a <strong>traceback</strong>.
-A traceback tells you what happened and where.</p>
-<p>Always start reading from the <strong>bottom</strong>. That's where the most instructive
-information is.</p>
-<p><div class="highlight"><pre><span></span><code><span class="c1"># boom.py</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"start"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">10</span> <span class="o">/</span> <span class="mi">0</span><span class="p">)</span>       <span class="c1"># boom </span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"never runs"</span><span class="p">)</span>
+<div class="admonition warning">
+<p class="admonition-title">Order matters</p>
+<p>Put the <strong>most specific / highest</strong> conditions first when there is overlap. 
+In the previous example, if <code>score &gt;=70</code> were put first, everybody with a score
+greater than 70 would get a grade of "C", making the "A" and "B" grades unattainable!</p>
+</div>
+<h2 id="example">Example</h2>
+<div class="highlight"><pre><span></span><code><span class="c1"># ticket.py</span>
+<span class="n">age</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter your age: "</span><span class="p">))</span>
+<span class="k">if</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Invalid age"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Free"</span><span class="p">)</span>
+<span class="k">elif</span> <span class="n">age</span> <span class="o">&lt;</span> <span class="mi">18</span> <span class="ow">or</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">65</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Discounted: $8"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Full price: $12"</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>start
-Traceback (most recent call last):
-  File "boom.py", line 4, in &lt;module&gt;
-ZeroDivisionError: division by zero
-</code></pre></div></p>
-<ul>
-<li><code>ZeroDivisionError: division by zero</code> — <em>what</em> went wrong.</li>
-<li><code>File "boom.py", line 4</code> — <em>where</em>.</li>
-<li><code>start</code> printed, <code>never runs</code> did not — Python stopped at the error.</li>
-</ul>
-<p>Here are some of the most common errors:</p>
-<table>
-<thead>
-<tr>
-<th>Error</th>
-<th>Means</th>
-<th>Typical cause</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>SyntaxError</code></td>
-<td>Python can't even parse the line</td>
-<td>missing <code>)</code>, missing quote</td>
-</tr>
-<tr>
-<td><code>NameError</code></td>
-<td>a name isn't defined</td>
-<td>typo, or used before assigned</td>
-</tr>
-<tr>
-<td><code>TypeError</code></td>
-<td>wrong <em>kind</em> of value</td>
-<td><code>"age" + 30</code></td>
-</tr>
-</tbody>
-</table>
-<h2 id="worked-examples">Worked examples</h2>
-<p><div class="highlight"><pre><span></span><code><span class="c1"># greet.py — a first real script</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"What this program does: greets the world three ways."</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Hello, world!"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Hello,"</span><span class="p">,</span> <span class="s2">"world!"</span><span class="p">)</span>            <span class="c1"># print joins with a space</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Hel"</span> <span class="o">+</span> <span class="s2">"lo"</span> <span class="o">+</span> <span class="s2">", world!"</span><span class="p">)</span>     <span class="c1"># strings joined by hand</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"="</span> <span class="o">*</span> <span class="mi">20</span><span class="p">)</span>                      <span class="c1"># ⇒ ==================== (repeat a string)</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>What this program does: greets the world three ways.
-Hello, world!
-Hello, world!
-Hello, world!
-====================
-</code></pre></div></p>
 
 
 
@@ -1478,6 +1314,9 @@ Hello, world!
 
 
 
+
+  
+  
 
 
 
@@ -1509,7 +1348,7 @@ Hello, world!
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Getting Python">
+          <a href="../booleans/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Booleans">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
@@ -1519,20 +1358,20 @@ Hello, world!
                 Previous
               </span>
               <div class="md-ellipsis">
-                Getting Python
+                Booleans
               </div>
             </div>
           </a>
         
         
           
-          <a href="../exercises/" class="md-footer__link md-footer__link--next" aria-label="Next: Exercises">
+          <a href="../more-on-strings/" class="md-footer__link md-footer__link--next" aria-label="Next: String manipulation">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Exercises
+                String manipulation
               </div>
             </div>
             <div class="md-footer__button md-icon">

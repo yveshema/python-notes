@@ -10,31 +10,31 @@
         <meta name="author" content="Yves Rene Shema">
       
       
-        <link rel="canonical" href="https://python.rysapp.com/getting-started/input-output/">
+        <link rel="canonical" href="https://python.rysapp.com/conditionals/">
       
       
-        <link rel="prev" href="../">
+        <link rel="prev" href="../variables-and-data-types/exercises/">
       
       
-        <link rel="next" href="../exercises/">
+        <link rel="next" href="./booleans/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/img/favicon.svg">
+      <link rel="icon" href="../assets/img/favicon.svg">
       <meta name="generator" content="zensical-0.0.65">
     
     
       
-        <title>Input and Output - ACIT 1515 Scripting for IT</title>
+        <title>Conditionals - ACIT 1515 Scripting for IT</title>
       
     
     
       
         
       
-      <link rel="stylesheet" href="../../assets/stylesheets/modern/main.40d3fdbb.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.40d3fdbb.min.css">
       
       
 
@@ -53,7 +53,7 @@
       
     
     
-    <script>__md_scope=new URL("../..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    <script>__md_scope=new URL("..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
 
@@ -71,7 +71,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#input-and-output" class="md-skip">
+        <a href="#making-decisions" class="md-skip">
           Skip to content
         </a>
       
@@ -87,7 +87,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="ACIT 1515 Scripting for IT" class="md-header__button md-logo" aria-label="ACIT 1515 Scripting for IT" data-md-component="logo">
+    <a href="./.." title="ACIT 1515 Scripting for IT" class="md-header__button md-logo" aria-label="ACIT 1515 Scripting for IT" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6M286.2 444.7a20.4 20.4 0 1 1 0-40.7 20.4 20.4 0 1 1 0 40.7M167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4m-6.6-183.4a20.4 20.4 0 1 1 0 40.8 20.4 20.4 0 1 1 0-40.8"/></svg>
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Input and Output
+              Conditionals
             
           </span>
         </div>
@@ -160,7 +160,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../.." class="md-tabs__link">
+        <a href="./.." class="md-tabs__link">
           
   
   Home
@@ -214,7 +214,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+        <a href="../getting-started/" class="md-tabs__link">
           
   
   Lessons
@@ -256,7 +256,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="ACIT 1515 Scripting for IT" class="md-nav__button md-logo" aria-label="ACIT 1515 Scripting for IT" data-md-component="logo">
+    <a href="./.." title="ACIT 1515 Scripting for IT" class="md-nav__button md-logo" aria-label="ACIT 1515 Scripting for IT" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6M286.2 444.7a20.4 20.4 0 1 1 0-40.7 20.4 20.4 0 1 1 0 40.7M167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4m-6.6-183.4a20.4 20.4 0 1 1 0 40.8 20.4 20.4 0 1 1 0-40.8"/></svg>
@@ -301,7 +301,7 @@
   
   
   
-    <a href="../.." class="md-nav__link">
+    <a href="./.." class="md-nav__link">
       
   
   
@@ -394,8 +394,6 @@
                   
   
   
-    
-  
   
   
     
@@ -423,15 +421,17 @@
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../getting-started/" class="md-nav__link ">
               
   
   
@@ -455,7 +455,7 @@
           </div>
         
         
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
             <label class="md-nav__title" for="__nav_2_1">
               <span class="md-nav__icon md-icon"></span>
               
@@ -471,36 +471,10 @@
                   
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-  Input and Output
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="././" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../getting-started/input-output/" class="md-nav__link">
         
   
   
@@ -515,112 +489,6 @@
   
 
       </a>
-      
-        
-
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#print" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        <code>print()</code>
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#input" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        <code>input()</code>
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-python-runs-your-program" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        How Python runs your program
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#comments" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Comments
-      </span>
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Comments">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#strings-and-numbers-are-different-kinds-of-thing" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Strings and numbers are different kinds of thing
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reading-error-messages" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Reading error messages
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#worked-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Worked examples
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -633,7 +501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../exercises/" class="md-nav__link">
+      <a href="../getting-started/exercises/" class="md-nav__link">
         
   
   
@@ -709,7 +577,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../variables-and-data-types/" class="md-nav__link ">
+            <a href="../variables-and-data-types/" class="md-nav__link ">
               
   
   
@@ -752,7 +620,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../variables-and-data-types/variables/" class="md-nav__link">
+      <a href="../variables-and-data-types/variables/" class="md-nav__link">
         
   
   
@@ -779,7 +647,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../variables-and-data-types/strings/" class="md-nav__link">
+      <a href="../variables-and-data-types/strings/" class="md-nav__link">
         
   
   
@@ -806,7 +674,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../variables-and-data-types/numbers/" class="md-nav__link">
+      <a href="../variables-and-data-types/numbers/" class="md-nav__link">
         
   
   
@@ -833,7 +701,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../variables-and-data-types/built-ins/" class="md-nav__link">
+      <a href="../variables-and-data-types/built-ins/" class="md-nav__link">
         
   
   
@@ -860,7 +728,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../variables-and-data-types/exercises/" class="md-nav__link">
+      <a href="../variables-and-data-types/exercises/" class="md-nav__link">
         
   
   
@@ -893,8 +761,10 @@
                   
   
   
+    
   
   
+  
     
     
       
@@ -924,17 +794,15 @@
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../conditionals/" class="md-nav__link ">
+            <a href="././" class="md-nav__link md-nav__link--active">
               
   
   
@@ -951,14 +819,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+              <label class="md-nav__link md-nav__link--active" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
         
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
             <label class="md-nav__title" for="__nav_2_3">
               <span class="md-nav__icon md-icon"></span>
               
@@ -977,7 +845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../conditionals/booleans/" class="md-nav__link">
+      <a href="./booleans/" class="md-nav__link">
         
   
   
@@ -1004,7 +872,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../conditionals/if-statements/" class="md-nav__link">
+      <a href="./if-statements/" class="md-nav__link">
         
   
   
@@ -1031,7 +899,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../conditionals/more-on-strings/" class="md-nav__link">
+      <a href="./more-on-strings/" class="md-nav__link">
         
   
   
@@ -1058,7 +926,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../conditionals/exercises/" class="md-nav__link">
+      <a href="./exercises/" class="md-nav__link">
         
   
   
@@ -1109,8 +977,6 @@
                     
                     
                     
-                      
-                    
                     
                       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
                       <div class="md-sidebar-button__wrapper">
@@ -1128,8 +994,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -1138,82 +1002,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#print" class="md-nav__link">
+  <a href="#making-decisions" class="md-nav__link">
     <span class="md-ellipsis">
       <span class="md-typeset">
-        <code>print()</code>
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#input" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        <code>input()</code>
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-python-runs-your-program" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        How Python runs your program
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#comments" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Comments
-      </span>
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Comments">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#strings-and-numbers-are-different-kinds-of-thing" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Strings and numbers are different kinds of thing
-      </span>
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reading-error-messages" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Reading error messages
-      </span>
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#worked-examples" class="md-nav__link">
-    <span class="md-ellipsis">
-      <span class="md-typeset">
-        Worked examples
+        Making decisions
       </span>
     </span>
   </a>
@@ -1275,7 +1067,7 @@
     
     
       <li class="md-path__item">
-        <a href="../" class="md-path__link">
+        <a href="../getting-started/" class="md-path__link">
           
   
   <span class="md-ellipsis">
@@ -1305,16 +1097,20 @@
       
         
       
+        
+      
+        
+      
     
     
     
     
       <li class="md-path__item">
-        <a href="../" class="md-path__link">
+        <a href="././" class="md-path__link">
           
   
   <span class="md-ellipsis">
-    Getting Started
+    Conditionals
   </span>
 
         </a>
@@ -1331,145 +1127,22 @@
                 
                   
 
-<h1 id="input-and-output">Input and Output</h1>
-<p>A useful program typically processes some input and produces output.
-Many programs manipulate text as both input and output.</p>
-<h2 id="print"><code>print()</code></h2>
-<p>In Python, the built-in <code>print()</code> function can be used to print text
-to the screen.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s1">'Hello World'</span><span class="p">)</span>
-<span class="n">Hello</span> <span class="n">World</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-<span class="mi">5</span>
-</code></pre></div>
-<p>You can pass more than one value to the <code>print()</code> function; we call these
-arguments. When you do so, <code>print()</code> will output them with a space between them.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"x"</span><span class="p">,</span> <span class="s2">"y"</span><span class="p">,</span> <span class="s2">"z"</span><span class="p">)</span>
-<span class="n">x</span> <span class="n">y</span> <span class="n">z</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"total:"</span><span class="p">,</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">4</span><span class="p">)</span>
-<span class="n">total</span><span class="p">:</span> <span class="mi">7</span>
-</code></pre></div>
-<p>Two useful keyword options:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"a"</span><span class="p">,</span> <span class="s2">"b"</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">"-"</span><span class="p">)</span>        <span class="c1"># (sep = what goes between arguments)</span>
-<span class="n">a</span><span class="o">-</span><span class="n">b</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"no newline"</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>     <span class="c1"># won't print a newline</span>
-<span class="n">no</span> <span class="n">newline</span>
-</code></pre></div>
-<h2 id="input"><code>input()</code></h2>
-<p>The built-in <code>input()</code> function is used to collect text typed by the user
-into a terminal and makes it available for the program to use. The input
-ends when the user presses <code>ENTER</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Please enter your name: '</span><span class="p">)</span>
-<span class="n">Please</span> <span class="n">enter</span> <span class="n">your</span> <span class="n">name</span><span class="p">:</span> <span class="n">Ada</span>
-<span class="s1">'Ada'</span>
-</code></pre></div>
-<p>You will always want to store the input into a variable before you can use it.</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">'Please enter your name: '</span><span class="p">)</span>
-<span class="n">Please</span> <span class="n">enter</span> <span class="n">your</span> <span class="n">name</span><span class="p">:</span> <span class="n">Ada</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
-<span class="n">Ada</span>
-</code></pre></div>
-<h2 id="how-python-runs-your-program">How Python runs your program</h2>
-<p>A program is a list of <strong>statements</strong> the Python interpreter carries out <strong>in order</strong>, one
-after another:</p>
-<p><div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">"first"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"second"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"third"</span><span class="p">)</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>first
-second
-third
-</code></pre></div></p>
-<p>That top-to-bottom flow is the default and can only be changed by flow control statements
-and errors.</p>
-<h2 id="comments">Comments</h2>
-<p>Anything after <code>#</code> on a line is a <strong>comment</strong>. Python skips it entirely; it's there to
-explain <em>why</em>:</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># Convert the price to cents to avoid rounding problems.</span>
-<span class="n">price_cents</span> <span class="o">=</span> <span class="mi">1999</span>        <span class="c1"># $19.99 stored as an integer number of cents</span>
-</code></pre></div>
-<p>Good comments explain intent, not the obvious. </p>
+  <h1 id="__skip">Conditionals</h1>
+
+<h2 id="making-decisions">Making decisions</h2>
+<p>To be useful, programs often need to make decisions, that is, carry out certain actions based on whether certain conditions are met or not. This <strong>branching</strong> behavior stands on two legs:</p>
 <ul>
-<li><code>x = x + 1  # add one to x</code>: not a very useful comment</li>
-<li><code>x = x + 1  # advance to the next customer</code>: this carries actual information</li>
+<li><strong>Boolean expressions:</strong> Python expressions that produce a <em>true</em> or <em>false</em> value</li>
+<li><strong>Conditional logic:</strong>  <code>if</code> and <code>if-else</code> statements. Decide whether to execute blocks of code based on the value of a boolean expression.</li>
 </ul>
-<h3 id="strings-and-numbers-are-different-kinds-of-thing">Strings and numbers are different kinds of thing</h3>
-<p><code>"42"</code> (with quotes) is <strong>text</strong>; <code>42</code> (no quotes) is a <strong>number</strong>. They behave
-differently</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span>
-<span class="mi">5</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"2"</span> <span class="o">+</span> <span class="s2">"3"</span><span class="p">)</span>
-<span class="mi">23</span>
-</code></pre></div>
-<p>Mixing them is an error, and a very common one:</p>
-<div class="highlight"><pre><span></span><code><span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"age: "</span> <span class="o">+</span> <span class="mi">30</span><span class="p">)</span>
-<span class="o">...</span>
-<span class="ne">TypeError</span><span class="p">:</span> <span class="n">can</span> <span class="n">only</span> <span class="n">concatenate</span> <span class="nb">str</span> <span class="p">(</span><span class="ow">not</span> <span class="s2">"int"</span><span class="p">)</span> <span class="n">to</span> <span class="nb">str</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="nb">print</span><span class="p">(</span><span class="s2">"age: "</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
-<span class="n">age</span><span class="p">:</span> <span class="mi">30</span>
-</code></pre></div>
-<h2 id="reading-error-messages">Reading error messages</h2>
-<p>When Python can't run something, it stops and prints a <strong>traceback</strong>.
-A traceback tells you what happened and where.</p>
-<p>Always start reading from the <strong>bottom</strong>. That's where the most instructive
-information is.</p>
-<p><div class="highlight"><pre><span></span><code><span class="c1"># boom.py</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"start"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">10</span> <span class="o">/</span> <span class="mi">0</span><span class="p">)</span>       <span class="c1"># boom </span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"never runs"</span><span class="p">)</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>start
-Traceback (most recent call last):
-  File "boom.py", line 4, in &lt;module&gt;
-ZeroDivisionError: division by zero
-</code></pre></div></p>
+<p>In this lesson we look at:</p>
 <ul>
-<li><code>ZeroDivisionError: division by zero</code> — <em>what</em> went wrong.</li>
-<li><code>File "boom.py", line 4</code> — <em>where</em>.</li>
-<li><code>start</code> printed, <code>never runs</code> did not — Python stopped at the error.</li>
+<li>How to produce <em>true</em> or <em>false</em> values</li>
+<li>How to test the value of a boolean expression using <code>if</code> statements</li>
+<li>Code blocks and indentation in Python</li>
+<li>How to write programs that behave differently based on input</li>
+<li>More on string manipulation in Python, including string formatting</li>
 </ul>
-<p>Here are some of the most common errors:</p>
-<table>
-<thead>
-<tr>
-<th>Error</th>
-<th>Means</th>
-<th>Typical cause</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>SyntaxError</code></td>
-<td>Python can't even parse the line</td>
-<td>missing <code>)</code>, missing quote</td>
-</tr>
-<tr>
-<td><code>NameError</code></td>
-<td>a name isn't defined</td>
-<td>typo, or used before assigned</td>
-</tr>
-<tr>
-<td><code>TypeError</code></td>
-<td>wrong <em>kind</em> of value</td>
-<td><code>"age" + 30</code></td>
-</tr>
-</tbody>
-</table>
-<h2 id="worked-examples">Worked examples</h2>
-<p><div class="highlight"><pre><span></span><code><span class="c1"># greet.py — a first real script</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"What this program does: greets the world three ways."</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Hello, world!"</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Hello,"</span><span class="p">,</span> <span class="s2">"world!"</span><span class="p">)</span>            <span class="c1"># print joins with a space</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"Hel"</span> <span class="o">+</span> <span class="s2">"lo"</span> <span class="o">+</span> <span class="s2">", world!"</span><span class="p">)</span>     <span class="c1"># strings joined by hand</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"="</span> <span class="o">*</span> <span class="mi">20</span><span class="p">)</span>                      <span class="c1"># ⇒ ==================== (repeat a string)</span>
-</code></pre></div>
-<div class="highlight"><pre><span></span><code>What this program does: greets the world three ways.
-Hello, world!
-Hello, world!
-Hello, world!
-====================
-</code></pre></div></p>
 
 
 
@@ -1478,6 +1151,9 @@ Hello, world!
 
 
 
+
+  
+  
 
 
 
@@ -1509,7 +1185,7 @@ Hello, world!
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Getting Python">
+          <a href="../variables-and-data-types/exercises/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Excercises">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
@@ -1519,20 +1195,20 @@ Hello, world!
                 Previous
               </span>
               <div class="md-ellipsis">
-                Getting Python
+                Excercises
               </div>
             </div>
           </a>
         
         
           
-          <a href="../exercises/" class="md-footer__link md-footer__link--next" aria-label="Next: Exercises">
+          <a href="./booleans/" class="md-footer__link md-footer__link--next" aria-label="Next: Booleans">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Exercises
+                Booleans
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1574,10 +1250,10 @@ Hello, world!
       
         
         
-      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["header.autohide","announce.dismiss","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.tracking","navigation.tabs","navigation.tabs.sticky","navigation.sections","navigation.path","navigation.indexes","navigation.top","navigation.expand","navigation.prune","navigation.footer","toc.follow","content.tabs.link"],"redirect":null,"search":"../../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["header.autohide","announce.dismiss","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.tracking","navigation.tabs","navigation.tabs.sticky","navigation.sections","navigation.path","navigation.indexes","navigation.top","navigation.expand","navigation.prune","navigation.footer","toc.follow","content.tabs.link"],"redirect":null,"search":"../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c04ba553.min.js"></script>
+      <script src="../assets/javascripts/bundle.c04ba553.min.js"></script>
       
     
   </body>
