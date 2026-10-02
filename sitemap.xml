@@ -4,37 +4,13 @@
         <loc>https://python.rysapp.com/</loc>
       </url>
       <url>
-        <loc>https://python.rysapp.com/getting-started/</loc>
-      </url>
-      <url>
-        <loc>https://python.rysapp.com/getting-started/input-output/</loc>
-      </url>
-      <url>
-        <loc>https://python.rysapp.com/getting-started/exercises/</loc>
-      </url>
-      <url>
-        <loc>https://python.rysapp.com/variables-and-data-types/</loc>
-      </url>
-      <url>
-        <loc>https://python.rysapp.com/variables-and-data-types/variables/</loc>
-      </url>
-      <url>
-        <loc>https://python.rysapp.com/variables-and-data-types/strings/</loc>
-      </url>
-      <url>
-        <loc>https://python.rysapp.com/variables-and-data-types/numbers/</loc>
-      </url>
-      <url>
-        <loc>https://python.rysapp.com/variables-and-data-types/built-ins/</loc>
-      </url>
-      <url>
-        <loc>https://python.rysapp.com/variables-and-data-types/exercises/</loc>
-      </url>
-      <url>
         <loc>https://python.rysapp.com/conditionals/</loc>
       </url>
       <url>
         <loc>https://python.rysapp.com/conditionals/booleans/</loc>
+      </url>
+      <url>
+        <loc>https://python.rysapp.com/conditionals/exercises/</loc>
       </url>
       <url>
         <loc>https://python.rysapp.com/conditionals/if-statements/</loc>
@@ -43,6 +19,42 @@
         <loc>https://python.rysapp.com/conditionals/more-on-strings/</loc>
       </url>
       <url>
-        <loc>https://python.rysapp.com/conditionals/exercises/</loc>
+        <loc>https://python.rysapp.com/getting-started/</loc>
+      </url>
+      <url>
+        <loc>https://python.rysapp.com/getting-started/exercises/</loc>
+      </url>
+      <url>
+        <loc>https://python.rysapp.com/getting-started/input-output/</loc>
+      </url>
+      <url>
+        <loc>https://python.rysapp.com/variables-and-data-types/</loc>
+      </url>
+      <url>
+        <loc>https://python.rysapp.com/variables-and-data-types/built-ins/</loc>
+      </url>
+      <url>
+        <loc>https://python.rysapp.com/variables-and-data-types/examples/</loc>
+      </url>
+      <url>
+        <loc>https://python.rysapp.com/variables-and-data-types/exercises/</loc>
+      </url>
+      <url>
+        <loc>https://python.rysapp.com/variables-and-data-types/numbers/</loc>
+      </url>
+      <url>
+        <loc>https://python.rysapp.com/variables-and-data-types/strings/</loc>
+      </url>
+      <url>
+        <loc>https://python.rysapp.com/variables-and-data-types/variables/</loc>
+      </url>
+      <url>
+        <loc>https://python.rysapp.com/while-loop/</loc>
+      </url>
+      <url>
+        <loc>https://python.rysapp.com/while-loop/exercises/</loc>
+      </url>
+      <url>
+        <loc>https://python.rysapp.com/while-loop/while-loop/</loc>
       </url>
 </urlset>
