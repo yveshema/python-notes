@@ -10,13 +10,13 @@
         <meta name="author" content="Yves Rene Shema">
       
       
-        <link rel="canonical" href="https://python.rysapp.com/variables-and-data-types/strings/">
+        <link rel="canonical" href="https://python.rysapp.com/sequences/lists/">
       
       
-        <link rel="prev" href="../variables/">
+        <link rel="prev" href="../">
       
       
-        <link rel="next" href="../numbers/">
+        <link rel="next" href="../range/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Strings - ACIT 1515 Scripting for IT</title>
+        <title>Lists - ACIT 1515 Scripting for IT</title>
       
     
     
@@ -104,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Strings
+              Lists
             
           </span>
         </div>
@@ -539,8 +539,6 @@
                   
   
   
-    
-  
   
   
     
@@ -574,15 +572,17 @@
     
       
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../../variables-and-data-types/" class="md-nav__link ">
               
   
   
@@ -606,7 +606,7 @@
           </div>
         
         
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
             <label class="md-nav__title" for="__nav_2_2">
               <span class="md-nav__icon md-icon"></span>
               
@@ -625,7 +625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../variables/" class="md-nav__link">
+      <a href="../../variables-and-data-types/variables/" class="md-nav__link">
         
   
   
@@ -649,17 +649,10 @@
                   
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      
-      
-      
-      
-      <a href="././" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../variables-and-data-types/strings/" class="md-nav__link">
         
   
   
@@ -674,7 +667,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -687,7 +679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../numbers/" class="md-nav__link">
+      <a href="../../variables-and-data-types/numbers/" class="md-nav__link">
         
   
   
@@ -714,7 +706,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../built-ins/" class="md-nav__link">
+      <a href="../../variables-and-data-types/built-ins/" class="md-nav__link">
         
   
   
@@ -741,7 +733,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../exercises/" class="md-nav__link">
+      <a href="../../variables-and-data-types/exercises/" class="md-nav__link">
         
   
   
@@ -1112,8 +1104,10 @@
                   
   
   
+    
   
   
+  
     
     
       
@@ -1145,17 +1139,15 @@
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../sequences/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
   
@@ -1179,7 +1171,7 @@
           </div>
         
         
-          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="false">
+          <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
             <label class="md-nav__title" for="__nav_2_5">
               <span class="md-nav__icon md-icon"></span>
               
@@ -1195,10 +1187,34 @@
                   
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../sequences/lists/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Lists
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1213,6 +1229,82 @@
   
 
       </a>
+      
+        
+
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creating-and-indexing" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Creating and indexing
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mutating-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Mutating lists
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#searching-couting-and-aggregation" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Searching, couting, and aggregation
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lists-from-strings-and-back" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Lists from strings and back
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-gotchas" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        <code>list</code> gotchas
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1225,7 +1317,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sequences/range/" class="md-nav__link">
+      <a href="../range/" class="md-nav__link">
         
   
   
@@ -1252,7 +1344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sequences/tuples/" class="md-nav__link">
+      <a href="../tuples/" class="md-nav__link">
         
   
   
@@ -1279,7 +1371,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sequences/for-loop/" class="md-nav__link">
+      <a href="../for-loop/" class="md-nav__link">
         
   
   
@@ -1306,7 +1398,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../sequences/exercises/" class="md-nav__link">
+      <a href="../exercises/" class="md-nav__link">
         
   
   
@@ -1358,6 +1450,11 @@
                     
                     
                     
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
                   
                   <div class="md-sidebar__inner">
                     
@@ -1369,6 +1466,69 @@
   
   
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creating-and-indexing" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Creating and indexing
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mutating-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Mutating lists
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#searching-couting-and-aggregation" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Searching, couting, and aggregation
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lists-from-strings-and-back" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Lists from strings and back
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-gotchas" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        <code>list</code> gotchas
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1472,7 +1632,7 @@
           
   
   <span class="md-ellipsis">
-    Variables and data types
+    Sequences
   </span>
 
         </a>
@@ -1491,88 +1651,148 @@
                   
 
 
-  <h1>Strings</h1>
+  <h1>Lists</h1>
 
-<p>In Python the type used to represent text is called <strong>string</strong>.
-You can use strings to provide feedback to the user during program
-execution or output logs from the program.</p>
-<p>You can generate strings from other strings:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">firstname</span> <span class="o">=</span> <span class="s2">"Ada"</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">lastname</span> <span class="o">=</span> <span class="s2">"Lovelace"</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">fullname</span> <span class="o">=</span> <span class="n">firstname</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="n">lastname</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">fullname</span><span class="p">)</span>
-<span class="go">Ada Lovelace</span>
+<h2 id="creating-and-indexing">Creating and indexing</h2>
+<p>A <strong>list</strong> is written with square brackets. Lists can be empty or contain
+comma-separated item. Items can be any type and can even mixed:</p>
+<div class="highlight"><pre><span></span><code><span class="n">scores</span> <span class="o">=</span> <span class="p">[</span><span class="mi">88</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">79</span><span class="p">,</span> <span class="mi">95</span><span class="p">]</span>
+<span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Ada"</span><span class="p">,</span> <span class="s2">"Grace"</span><span class="p">,</span> <span class="s2">"Alan"</span><span class="p">]</span>
+<span class="n">mixed</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Ada"</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="kc">True</span><span class="p">]</span>
+<span class="n">empty</span> <span class="o">=</span> <span class="p">[]</span>
 </code></pre></div>
-<p>You can convert most types to strings:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">age</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="mi">25</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s2">"You are "</span> <span class="o">+</span> <span class="n">age</span> <span class="o">+</span> <span class="s2">" years old"</span><span class="p">)</span>
-<span class="go">You are 25 years old</span>
+<p>Lists can be indexed, concatenated and sliced exactly like strings. Indexes are 0-based:</p>
+<div class="highlight"><pre><span></span><code><span class="n">scores</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>      <span class="c1"># ⇒ 88     first</span>
+<span class="n">scores</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>     <span class="c1"># ⇒ 95     last</span>
+<span class="n">scores</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>    <span class="c1"># ⇒ [92, 79]   a slice is a NEW list</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>    <span class="c1"># ⇒ 4</span>
+
+<span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="mi">3</span><span class="p">]</span>      <span class="c1"># ⇒ [2, 3]</span>
+<span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">*</span> <span class="mi">3</span>        <span class="c1"># ⇒ [2, 2, 2]</span>
 </code></pre></div>
-<p>Without the <code>str(25)</code> conversion, the <code>print()</code> statement would 
-have produced a <code>TypeError</code>.</p>
-<p>Other ways to concatenate (join) strings:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="s1">'Hello'</span> <span class="s1">' world'</span>
-<span class="go">'Hello world'</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="p">(</span><span class="s1">'Hello'</span>
-<span class="gp">... </span><span class="s1">' world'</span><span class="p">)</span>
-<span class="go">'Hello world'</span>
+<h2 id="mutating-lists">Mutating lists</h2>
+<p>Unlike strings, you <strong>can</strong> change a list's contents without making a new one:</p>
+<div class="highlight"><pre><span></span><code><span class="n">scores</span> <span class="o">=</span> <span class="p">[</span><span class="mi">88</span><span class="p">,</span> <span class="mi">92</span><span class="p">,</span> <span class="mi">79</span><span class="p">]</span>
+<span class="n">scores</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">100</span>          <span class="c1"># replace an element</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">scores</span><span class="p">)</span>            <span class="c1"># ⇒ [100, 92, 79]</span>
 </code></pre></div>
-<p>Use pairs of triple single or double quotes for multi-line strings:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">html</span> <span class="o">=</span> <span class="s2">"""</span>
-<span class="go">&lt;body&gt;</span>
-<span class="go">    &lt;h1&gt;About&lt;/h1&gt;</span>
-<span class="go">&lt;/body&gt;</span>
-<span class="go">"""</span>
+<p>Lists can contain other lists:</p>
+<div class="highlight"><pre><span></span><code><span class="n">matrix</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">9</span><span class="p">]]</span>
 </code></pre></div>
-<div class="admonition info">
-<p class="admonition-title">Suppressing newline character in multi-line strings</p>
-<p>When printed, the <code>html</code> variable will output a newline character
-at both ends of the string.</p>
-<p>This is often not what you want. Use a <code>\</code> to suppress a newline character
-anywhere in the string.</p>
-<div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">html</span> <span class="o">=</span> <span class="s2">"""</span><span class="se">\</span>
-<span class="gp">... </span><span class="s2">&lt;body&gt;</span>
-<span class="gp">... </span><span class="s2">    &lt;h1&gt;About&lt;/h1&gt;</span>
-<span class="gp">... </span><span class="s2">&lt;/body&gt;"""</span>
+<p>The <code>list</code> type defines several methods that change a list in place:</p>
+<div class="highlight"><pre><span></span><code><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">nums</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>           <span class="c1"># add ONE item to the end     → [1, 2, 3, 4]</span>
+<span class="n">nums</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>        <span class="c1"># insert at an index           → [9, 1, 2, 3, 4]</span>
+<span class="n">nums</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">])</span>      <span class="c1"># add several from another list→ [9, 1, 2, 3, 4, 5, 6]</span>
+<span class="n">nums</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>           <span class="c1"># remove first matching VALUE  → [1, 2, 3, 4, 5, 6]</span>
+<span class="n">last</span> <span class="o">=</span> <span class="n">nums</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>        <span class="c1"># remove &amp; RETURN the last     → last=6</span>
+<span class="n">first</span> <span class="o">=</span> <span class="n">nums</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>      <span class="c1"># remove &amp; return by index     → first=1</span>
+<span class="n">nums</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>              <span class="c1"># sort IN PLACE (ascending)</span>
+<span class="n">nums</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># descending</span>
+<span class="n">nums</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>           <span class="c1"># reverse in place</span>
+<span class="n">nums</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>             <span class="c1"># empty it</span>
 </code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Mutating methods don't return a value</p>
+<p>Generally, methods that change a list's contents in place return <code>None</code>.</p>
+<p>A common mistake is to mutate and re-bind a reference to a list:</p>
+<div class="highlight"><pre><span></span><code><span class="n">nums</span> <span class="o">=</span> <span class="n">nums</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</code></pre></div>
+<p>This will not have the expected outcome. The expression will throw away
+your list and store <code>None</code> instead.</p>
+<p>The exception is <code>.pop()</code> which removes a value from the list and returns it.</p>
 </div>
-<p>The special <code>\</code> character is used to escape special characters such as quotes,
-non-printable characters and other characters that have meaning in the language (such
-as parentheses, braces, brackets, ...).</p>
-<div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="s2">"</span><span class="se">\"</span><span class="s2">Watch out!</span><span class="se">\"</span><span class="s2"> she cried"</span>
-<span class="go">'"Watch out!" she cried'</span>
-</code></pre></div>
-<div class="admonition info">
-<p class="admonition-title">Raw strings</p>
-<p>There are times when you need to output the literal <code>\</code>. You can
-handle this in two ways:</p>
+<div class="admonition tip">
+<p class="admonition-title">Non-mutating alternatives</p>
+<p>It is often recommended to avoid changing a list in place,
+but what alternatives are there?</p>
 <ul>
-<li>escape the <code>\</code>: <code>path="C:\\Program files\\Python314"</code></li>
-<li>use raw strings: <code>path=r"C:\Program files\Python314"</code></li>
+<li>concatenation: <code>.append()</code> and  <code>.extend()</code>
+    <div class="highlight"><pre><span></span><code><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>    
+<span class="n">nums</span> <span class="o">+</span> <span class="p">[</span><span class="mi">4</span><span class="p">]</span>                  <span class="c1"># → [1, 2, 3, 4]</span>
+<span class="n">nums</span> <span class="o">+</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>              <span class="c1"># → [ 1, 2, 3, 4, 4, 6]</span>
+</code></pre></div></li>
+<li>slicing: <code>.insert()</code>
+    <div class="highlight"><pre><span></span><code><span class="n">nums</span><span class="p">[:</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="mi">9</span><span class="p">]</span> <span class="o">+</span> <span class="n">nums</span><span class="p">[</span><span class="mi">0</span><span class="p">:]</span>   <span class="c1"># → [9, 1, 2, 3]</span>
+</code></pre></div></li>
+<li>non-mutating functions: non-mutating built-in functions for sorting and reversing lists:
+    <div class="highlight"><pre><span></span><code><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
+<span class="nb">sorted</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>                <span class="c1"># → [2, 3, 4, 6]</span>
+<span class="nb">sorted</span><span class="p">(</span><span class="n">nums</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># → [6, 4, 3, 2]</span>
+<span class="nb">list</span><span class="p">(</span><span class="nb">reversed</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>        <span class="c1"># → [2, 6, 3, 4]</span>
+</code></pre></div></li>
 </ul>
 </div>
-<p>Uppercase and lowercase:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="s1">'python'</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
-<span class="go">'PYTHON'</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="s1">'PYTHON'</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
-<span class="go">'python'</span>
+<h2 id="searching-couting-and-aggregation">Searching, couting, and aggregation</h2>
+<div class="highlight"><pre><span></span><code><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="mi">3</span> <span class="ow">in</span> <span class="n">nums</span>               <span class="c1"># → True</span>
+<span class="n">nums</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>           <span class="c1"># number of occurrences of 2 in the list</span>
+<span class="n">nums</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>           <span class="c1"># position of first occurrence of 3 in the list</span>
+<span class="nb">sum</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>               <span class="c1"># ⇒ total (works only for lists of numbers)</span>
+<span class="nb">min</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>               <span class="c1"># → 1</span>
+<span class="nb">max</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>               <span class="c1"># → 3</span>
 </code></pre></div>
-<p>Get part of a string:</p>
-<div class="highlight"><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">lang</span> <span class="o">=</span> <span class="s1">'python'</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">lang</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">upper</span> <span class="o">+</span> <span class="n">lang</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span>
-<span class="go">'Python'</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">lang</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">lang</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
-<span class="go">'pythoN'</span>
+<h2 id="lists-from-strings-and-back">Lists from strings and back</h2>
+<div class="highlight"><pre><span></span><code><span class="n">text</span> <span class="o">=</span> <span class="s1">'the quick brown fox'</span>
+<span class="n">words</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">words</span><span class="p">),</span> <span class="s2">"words"</span><span class="p">)</span>      <span class="c1"># ⇒ 3 words</span>
+
+<span class="n">csv_header</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Name"</span><span class="p">,</span> <span class="s2">"Job Title"</span><span class="p">,</span> <span class="s2">"Salary"</span><span class="p">]</span>
+<span class="s1">';'</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">csv_header</span><span class="p">)</span>
 </code></pre></div>
-<div class="admonition info">
-<p class="admonition-title">Indexing and slicing</p>
-<p><code>lang[0]</code> in the previous example is called indexing. This means
-retrieving the character at the given position in the string.
-Strings are sequences and their indexes start from <code>0</code>.</p>
-<p>The expression <code>var[n:m]</code> is called slicing. This means retrieving
-a substring starting at position <code>n</code> (inclusive) up to position <code>m</code> (exclusive).</p>
-<p>Negative index values are permitted and they start at the end of the string.</p>
-</div>
+<h2 id="list-gotchas"><code>list</code> gotchas</h2>
+<ul>
+<li>
+<p><strong>Aliasing</strong></p>
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">a</span>               <span class="c1"># → b is not a new list, but an alias of a</span>
+
+<span class="n">b</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>            <span class="c1"># ⇒ [1, 2, 3, 4]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>            <span class="c1"># ⇒ [1, 2, 3, 4]</span>
+</code></pre></div>
+</li>
+<li>
+<p><strong>Copying</strong></p>
+<div class="highlight"><pre><span></span><code><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">nums</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>     <span class="c1"># → [1,2,3]</span>
+</code></pre></div>
+<p><code>.copy()</code> only <strong>copies references of list items</strong>, not their values.
+For lists that contain other lists, this can lead to subtle bugs:</p>
+<div class="highlight"><pre><span></span><code><span class="n">nums</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
+<span class="n">copy</span> <span class="o">=</span> <span class="n">nums</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+
+<span class="nb">id</span><span class="p">(</span><span class="n">nums</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">==</span> <span class="nb">id</span><span class="p">(</span><span class="n">copy</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>      <span class="c1"># → True</span>
+
+<span class="n">copy</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">copy</span><span class="p">)</span>                     <span class="c1"># → [[5], [1], [1]]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>                     <span class="c1"># → [[5], [1], [1]]</span>
+</code></pre></div>
+<p>Watch out for this behavior too when you concatenate lists containing other lists:</p>
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="p">[[]]</span>                 <span class="c1"># a list containing an empty list</span>
+<span class="n">b</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">]]</span> 
+<span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>                 <span class="c1"># → [[], [1]]</span>
+
+<span class="n">c</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>                 <span class="c1"># → [[3], [1]]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>                 <span class="c1"># -&gt; [[3]]</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">y</span> <span class="o">=</span> <span class="p">[[]]</span>
+<span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>                 <span class="c1"># → [[1]]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>                 <span class="c1"># → [[1]]</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">]]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>                 <span class="c1"># → [[1, 2, 3], [], [1, 2, 3], []]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>                 <span class="c1"># → [[1, 2, 3], []]</span>
+</code></pre></div>
+<p>This is why it is recommended to <strong>prefer creating a new list 
+over changing a list in place</strong> </p>
+</li>
+</ul>
 
 
 
@@ -1615,7 +1835,7 @@ a substring starting at position <code>n</code> (inclusive) up to position <code
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../variables/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Variables">
+          <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Sequences">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
@@ -1625,20 +1845,20 @@ a substring starting at position <code>n</code> (inclusive) up to position <code
                 Previous
               </span>
               <div class="md-ellipsis">
-                Variables
+                Sequences
               </div>
             </div>
           </a>
         
         
           
-          <a href="../numbers/" class="md-footer__link md-footer__link--next" aria-label="Next: Numbers">
+          <a href="../range/" class="md-footer__link md-footer__link--next" aria-label="Next: Range">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Numbers
+                Range
               </div>
             </div>
             <div class="md-footer__button md-icon">
