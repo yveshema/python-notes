@@ -37,13 +37,13 @@
         <loc>https://python.rysapp.com/exceptions/argument-checking/</loc>
       </url>
       <url>
-        <loc>https://python.rysapp.com/exceptions/best-practices/</loc>
-      </url>
-      <url>
         <loc>https://python.rysapp.com/exceptions/exercises/</loc>
       </url>
       <url>
         <loc>https://python.rysapp.com/exceptions/fatal-errors/</loc>
+      </url>
+      <url>
+        <loc>https://python.rysapp.com/exceptions/raising-exceptions/</loc>
       </url>
       <url>
         <loc>https://python.rysapp.com/exceptions/raising/</loc>
